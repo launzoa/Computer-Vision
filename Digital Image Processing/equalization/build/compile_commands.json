@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/build",
+  "command": "/usr/bin/c++  -I\"/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/include\" -isystem /usr/include/opencv4  -o CMakeFiles/app.dir/src/main.cpp.o -c \"/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/src/main.cpp\"",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/build",
+  "command": "/usr/bin/c++  -I\"/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/include\" -isystem /usr/include/opencv4  -o CMakeFiles/app.dir/src/equalization.cpp.o -c \"/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/src/equalization.cpp\"",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/equalization/src/equalization.cpp",
+  "output": "CMakeFiles/app.dir/src/equalization.cpp.o"
+}
+]
