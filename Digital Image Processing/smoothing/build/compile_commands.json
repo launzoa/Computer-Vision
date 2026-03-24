@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build",
+  "command": "/usr/bin/c++  -I\"/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/include\" -isystem /usr/include/opencv4  -o CMakeFiles/app.dir/src/main.cpp.o -c \"/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/main.cpp\"",
+  "file": "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build",
+  "command": "/usr/bin/c++  -I\"/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/include\" -isystem /usr/include/opencv4  -o CMakeFiles/app.dir/src/spatial_filters.cpp.o -c \"/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/spatial_filters.cpp\"",
+  "file": "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/spatial_filters.cpp",
+  "output": "CMakeFiles/app.dir/src/spatial_filters.cpp.o"
+}
+]

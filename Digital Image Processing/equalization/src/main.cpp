@@ -1,4 +1,4 @@
-#include "interpolations.h"
+#include "equalization.h"
 #include <iostream>
 #include <opencv2/highgui.hpp>
 #include <opencv4/opencv2/opencv.hpp>
@@ -8,22 +8,17 @@ using namespace cv;
 
 int main() {
 
-  Mat img = imread("assets/Lena320x240.jpg", IMREAD_COLOR);
+  Mat img = imread("assets/Hawkes_Bay_NZ.jpg", IMREAD_COLOR);
+  Mat img_equalized = equalization(img);
 
-  double scale;
-  cout << "Escala para as interpolações: ";
-  cin >> scale;
-
-  Mat img_nN = nearestNeighbor(img, scale);
-  Mat img_bilinear = bilinear(img, scale);
-  Mat img_bicubic = bicubic(img, scale);
+  namedWindow("DIP", WINDOW_AUTOSIZE);
 
   Mat screen;
-  vector<Mat> array_imagens = {img_nN, img_bilinear, img_bicubic};
-  hconcat(array_imagens, screen);
+  vector<Mat> arr_imgs = {img, img_equalized};
+  hconcat(arr_imgs, screen);
 
-  namedWindow("Interpolation", WINDOW_AUTOSIZE);
-  imshow("Interpolation", screen);
+  imshow("DIP", screen);
   waitKey(0);
+
   return 0;
 }

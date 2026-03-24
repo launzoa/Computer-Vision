@@ -18,12 +18,14 @@ int main() {
   Mat img_bilinear = bilinear(img, scale);
   Mat img_bicubic = bicubic(img, scale);
 
+  namedWindow("Interpolation", WINDOW_AUTOSIZE);
+
   Mat screen;
   vector<Mat> array_imagens = {img_nN, img_bilinear, img_bicubic};
   hconcat(array_imagens, screen);
 
-  namedWindow("Interpolation", WINDOW_AUTOSIZE);
   imshow("Interpolation", screen);
   waitKey(0);
+
   return 0;
 }
