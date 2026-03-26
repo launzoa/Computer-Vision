@@ -4,7 +4,7 @@
 
 #include <opencv4/opencv2/opencv.hpp>
 
-cv::Mat mean_filter(cv::Mat &img, int m, int n);
-cv::Mat median_filter(cv::Mat &img, int m, int n);
+cv::Mat mean_filter(cv::Mat &img, int n);
+cv::Mat median_filter(cv::Mat &img, int n);
 
 #endif // !SPATIAL_FILTERS_H

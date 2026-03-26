@@ -20,68 +20,60 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
       - "/bin/"
     searched_directories:
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/uname"
-      - "/opt/miniconda3/bin/uname"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/uname"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/uname"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/uname"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/uname"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/uname"
       - "/home/launzoa/.local/share/omarchy/bin/uname"
       - "/home/launzoa/.local/share/mise/shims/uname"
-      - "/home/launzoa/.juliaup/bin/uname"
+      - "/home/launzoa/.local/bin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      The system is: Linux - 6.19.6-arch1-1 - x86_64
+      The system is: Linux - 6.19.8-arch1-1 - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -103,79 +95,67 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gmake"
-      - "/opt/miniconda3/bin/gmake"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gmake"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gmake"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gmake"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gmake"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gmake"
       - "/home/launzoa/.local/share/omarchy/bin/gmake"
       - "/home/launzoa/.local/share/mise/shims/gmake"
-      - "/home/launzoa/.juliaup/bin/gmake"
+      - "/home/launzoa/.local/bin/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
       - "/usr/bin/gmake"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gmake"
       - "/usr/lib/jvm/default/bin/gmake"
       - "/usr/bin/site_perl/gmake"
       - "/usr/bin/vendor_perl/gmake"
       - "/usr/bin/core_perl/gmake"
-      - "/home/launzoa/.local/bin/gmake"
       - "/home/launzoa/.local/share/nvim/mason/bin/gmake"
-      - "/home/launzoa/.local/share/mamba/condabin/gmake"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/make"
-      - "/opt/miniconda3/bin/make"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/make"
+      - "/home/launzoa/micromamba/condabin/gmake"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/make"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/make"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/make"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/make"
       - "/home/launzoa/.local/share/omarchy/bin/make"
       - "/home/launzoa/.local/share/mise/shims/make"
-      - "/home/launzoa/.juliaup/bin/make"
+      - "/home/launzoa/.local/bin/make"
       - "/usr/local/sbin/make"
       - "/usr/local/bin/make"
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -202,60 +182,52 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/cc"
-      - "/opt/miniconda3/bin/cc"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/cc"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/cc"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/cc"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/cc"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/cc"
       - "/home/launzoa/.local/share/omarchy/bin/cc"
       - "/home/launzoa/.local/share/mise/shims/cc"
-      - "/home/launzoa/.juliaup/bin/cc"
+      - "/home/launzoa/.local/bin/cc"
       - "/usr/local/sbin/cc"
       - "/usr/local/bin/cc"
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -283,27 +255,25 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "message-v1"
     backtrace:
@@ -324,7 +294,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/4.2.3/CompilerIdC/a.out
+        /home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/4.2.3/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -347,48 +317,42 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -410,48 +374,42 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -473,48 +431,42 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -536,48 +488,42 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -599,48 +545,42 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -662,48 +602,42 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -725,48 +659,42 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -788,48 +716,42 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -851,68 +773,58 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/dlltool"
-      - "/opt/miniconda3/bin/dlltool"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/dlltool"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/dlltool"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/dlltool"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/dlltool"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/dlltool"
       - "/home/launzoa/.local/share/omarchy/bin/dlltool"
       - "/home/launzoa/.local/share/mise/shims/dlltool"
-      - "/home/launzoa/.juliaup/bin/dlltool"
+      - "/home/launzoa/.local/bin/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/dlltool"
       - "/usr/lib/jvm/default/bin/dlltool"
       - "/usr/bin/site_perl/dlltool"
       - "/usr/bin/vendor_perl/dlltool"
       - "/usr/bin/core_perl/dlltool"
-      - "/home/launzoa/.local/bin/dlltool"
       - "/home/launzoa/.local/share/nvim/mason/bin/dlltool"
-      - "/home/launzoa/.local/share/mamba/condabin/dlltool"
+      - "/home/launzoa/micromamba/condabin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -934,48 +846,42 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -997,68 +903,58 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/tapi"
-      - "/opt/miniconda3/bin/tapi"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/tapi"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/tapi"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/tapi"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/tapi"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/tapi"
       - "/home/launzoa/.local/share/omarchy/bin/tapi"
       - "/home/launzoa/.local/share/mise/shims/tapi"
-      - "/home/launzoa/.juliaup/bin/tapi"
+      - "/home/launzoa/.local/bin/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/tapi"
       - "/usr/lib/jvm/default/bin/tapi"
       - "/usr/bin/site_perl/tapi"
       - "/usr/bin/vendor_perl/tapi"
       - "/usr/bin/core_perl/tapi"
-      - "/home/launzoa/.local/bin/tapi"
       - "/home/launzoa/.local/share/nvim/mason/bin/tapi"
-      - "/home/launzoa/.local/share/mamba/condabin/tapi"
+      - "/home/launzoa/micromamba/condabin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -1083,106 +979,88 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ar-15.2"
-      - "/opt/miniconda3/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ar-15.2"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ar-15.2"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/mise/shims/gcc-ar-15.2"
-      - "/home/launzoa/.juliaup/bin/gcc-ar-15.2"
+      - "/home/launzoa/.local/bin/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ar-15.2"
       - "/usr/lib/jvm/default/bin/gcc-ar-15.2"
       - "/usr/bin/site_perl/gcc-ar-15.2"
       - "/usr/bin/vendor_perl/gcc-ar-15.2"
       - "/usr/bin/core_perl/gcc-ar-15.2"
-      - "/home/launzoa/.local/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ar-15.2"
+      - "/home/launzoa/micromamba/condabin/gcc-ar-15.2"
       - "/usr/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ar-15"
-      - "/opt/miniconda3/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ar-15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ar-15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ar-15"
-      - "/home/launzoa/.juliaup/bin/gcc-ar-15"
+      - "/home/launzoa/.local/bin/gcc-ar-15"
       - "/usr/local/sbin/gcc-ar-15"
       - "/usr/local/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ar-15"
       - "/usr/lib/jvm/default/bin/gcc-ar-15"
       - "/usr/bin/site_perl/gcc-ar-15"
       - "/usr/bin/vendor_perl/gcc-ar-15"
       - "/usr/bin/core_perl/gcc-ar-15"
-      - "/home/launzoa/.local/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ar-15"
+      - "/home/launzoa/micromamba/condabin/gcc-ar-15"
       - "/usr/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ar15"
-      - "/opt/miniconda3/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ar15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ar15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ar15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ar15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ar15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ar15"
-      - "/home/launzoa/.juliaup/bin/gcc-ar15"
+      - "/home/launzoa/.local/bin/gcc-ar15"
       - "/usr/local/sbin/gcc-ar15"
       - "/usr/local/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ar15"
       - "/usr/lib/jvm/default/bin/gcc-ar15"
       - "/usr/bin/site_perl/gcc-ar15"
       - "/usr/bin/vendor_perl/gcc-ar15"
       - "/usr/bin/core_perl/gcc-ar15"
-      - "/home/launzoa/.local/bin/gcc-ar15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ar15"
+      - "/home/launzoa/micromamba/condabin/gcc-ar15"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -1207,106 +1085,88 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ranlib-15.2"
-      - "/opt/miniconda3/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ranlib-15.2"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ranlib-15.2"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/mise/shims/gcc-ranlib-15.2"
-      - "/home/launzoa/.juliaup/bin/gcc-ranlib-15.2"
+      - "/home/launzoa/.local/bin/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ranlib-15.2"
       - "/usr/lib/jvm/default/bin/gcc-ranlib-15.2"
       - "/usr/bin/site_perl/gcc-ranlib-15.2"
       - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
       - "/usr/bin/core_perl/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ranlib-15.2"
+      - "/home/launzoa/micromamba/condabin/gcc-ranlib-15.2"
       - "/usr/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ranlib-15"
-      - "/opt/miniconda3/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ranlib-15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ranlib-15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ranlib-15"
-      - "/home/launzoa/.juliaup/bin/gcc-ranlib-15"
+      - "/home/launzoa/.local/bin/gcc-ranlib-15"
       - "/usr/local/sbin/gcc-ranlib-15"
       - "/usr/local/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ranlib-15"
       - "/usr/lib/jvm/default/bin/gcc-ranlib-15"
       - "/usr/bin/site_perl/gcc-ranlib-15"
       - "/usr/bin/vendor_perl/gcc-ranlib-15"
       - "/usr/bin/core_perl/gcc-ranlib-15"
-      - "/home/launzoa/.local/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ranlib-15"
+      - "/home/launzoa/micromamba/condabin/gcc-ranlib-15"
       - "/usr/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ranlib15"
-      - "/opt/miniconda3/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ranlib15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ranlib15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ranlib15"
-      - "/home/launzoa/.juliaup/bin/gcc-ranlib15"
+      - "/home/launzoa/.local/bin/gcc-ranlib15"
       - "/usr/local/sbin/gcc-ranlib15"
       - "/usr/local/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ranlib15"
       - "/usr/lib/jvm/default/bin/gcc-ranlib15"
       - "/usr/bin/site_perl/gcc-ranlib15"
       - "/usr/bin/vendor_perl/gcc-ranlib15"
       - "/usr/bin/core_perl/gcc-ranlib15"
-      - "/home/launzoa/.local/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ranlib15"
+      - "/home/launzoa/micromamba/condabin/gcc-ranlib15"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -1340,27 +1200,25 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -1388,27 +1246,25 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "message-v1"
     backtrace:
@@ -1429,7 +1285,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out
+        /home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -1455,106 +1311,88 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ar-15.2"
-      - "/opt/miniconda3/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ar-15.2"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ar-15.2"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/mise/shims/gcc-ar-15.2"
-      - "/home/launzoa/.juliaup/bin/gcc-ar-15.2"
+      - "/home/launzoa/.local/bin/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ar-15.2"
       - "/usr/lib/jvm/default/bin/gcc-ar-15.2"
       - "/usr/bin/site_perl/gcc-ar-15.2"
       - "/usr/bin/vendor_perl/gcc-ar-15.2"
       - "/usr/bin/core_perl/gcc-ar-15.2"
-      - "/home/launzoa/.local/bin/gcc-ar-15.2"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ar-15.2"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ar-15.2"
+      - "/home/launzoa/micromamba/condabin/gcc-ar-15.2"
       - "/usr/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ar-15"
-      - "/opt/miniconda3/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ar-15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ar-15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ar-15"
-      - "/home/launzoa/.juliaup/bin/gcc-ar-15"
+      - "/home/launzoa/.local/bin/gcc-ar-15"
       - "/usr/local/sbin/gcc-ar-15"
       - "/usr/local/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ar-15"
       - "/usr/lib/jvm/default/bin/gcc-ar-15"
       - "/usr/bin/site_perl/gcc-ar-15"
       - "/usr/bin/vendor_perl/gcc-ar-15"
       - "/usr/bin/core_perl/gcc-ar-15"
-      - "/home/launzoa/.local/bin/gcc-ar-15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ar-15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ar-15"
+      - "/home/launzoa/micromamba/condabin/gcc-ar-15"
       - "/usr/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ar15"
-      - "/opt/miniconda3/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ar15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ar15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ar15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ar15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ar15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ar15"
-      - "/home/launzoa/.juliaup/bin/gcc-ar15"
+      - "/home/launzoa/.local/bin/gcc-ar15"
       - "/usr/local/sbin/gcc-ar15"
       - "/usr/local/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ar15"
       - "/usr/lib/jvm/default/bin/gcc-ar15"
       - "/usr/bin/site_perl/gcc-ar15"
       - "/usr/bin/vendor_perl/gcc-ar15"
       - "/usr/bin/core_perl/gcc-ar15"
-      - "/home/launzoa/.local/bin/gcc-ar15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ar15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ar15"
+      - "/home/launzoa/micromamba/condabin/gcc-ar15"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "find-v1"
     backtrace:
@@ -1579,106 +1417,88 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/"
-      - "/opt/miniconda3/bin/"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/"
       - "/home/launzoa/.local/share/omarchy/bin/"
       - "/home/launzoa/.local/share/mise/shims/"
-      - "/home/launzoa/.juliaup/bin/"
+      - "/home/launzoa/.local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/home/launzoa/.local/bin/"
       - "/home/launzoa/.local/share/nvim/mason/bin/"
-      - "/home/launzoa/.local/share/mamba/condabin/"
+      - "/home/launzoa/micromamba/condabin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ranlib-15.2"
-      - "/opt/miniconda3/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ranlib-15.2"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ranlib-15.2"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/mise/shims/gcc-ranlib-15.2"
-      - "/home/launzoa/.juliaup/bin/gcc-ranlib-15.2"
+      - "/home/launzoa/.local/bin/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ranlib-15.2"
       - "/usr/lib/jvm/default/bin/gcc-ranlib-15.2"
       - "/usr/bin/site_perl/gcc-ranlib-15.2"
       - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
       - "/usr/bin/core_perl/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/bin/gcc-ranlib-15.2"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ranlib-15.2"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ranlib-15.2"
+      - "/home/launzoa/micromamba/condabin/gcc-ranlib-15.2"
       - "/usr/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ranlib-15"
-      - "/opt/miniconda3/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ranlib-15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ranlib-15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ranlib-15"
-      - "/home/launzoa/.juliaup/bin/gcc-ranlib-15"
+      - "/home/launzoa/.local/bin/gcc-ranlib-15"
       - "/usr/local/sbin/gcc-ranlib-15"
       - "/usr/local/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ranlib-15"
       - "/usr/lib/jvm/default/bin/gcc-ranlib-15"
       - "/usr/bin/site_perl/gcc-ranlib-15"
       - "/usr/bin/vendor_perl/gcc-ranlib-15"
       - "/usr/bin/core_perl/gcc-ranlib-15"
-      - "/home/launzoa/.local/bin/gcc-ranlib-15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ranlib-15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ranlib-15"
+      - "/home/launzoa/micromamba/condabin/gcc-ranlib-15"
       - "/usr/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mamba/envs/global/bin/gcc-ranlib15"
-      - "/opt/miniconda3/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin/gcc-ranlib15"
+      - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin/gcc-ranlib15"
+      - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/omarchy/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/mise/shims/gcc-ranlib15"
-      - "/home/launzoa/.juliaup/bin/gcc-ranlib15"
+      - "/home/launzoa/.local/bin/gcc-ranlib15"
       - "/usr/local/sbin/gcc-ranlib15"
       - "/usr/local/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/flatpak/exports/bin/gcc-ranlib15"
       - "/usr/lib/jvm/default/bin/gcc-ranlib15"
       - "/usr/bin/site_perl/gcc-ranlib15"
       - "/usr/bin/vendor_perl/gcc-ranlib15"
       - "/usr/bin/core_perl/gcc-ranlib15"
-      - "/home/launzoa/.local/bin/gcc-ranlib15"
       - "/home/launzoa/.local/share/nvim/mason/bin/gcc-ranlib15"
-      - "/home/launzoa/.local/share/mamba/condabin/gcc-ranlib15"
+      - "/home/launzoa/micromamba/condabin/gcc-ranlib15"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1688,8 +1508,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq"
-      binary: "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq"
+      source: "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf"
+      binary: "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1698,13 +1518,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq'
+        Change Dir: '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1e0a1/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_1e0a1.dir/build.make CMakeFiles/cmTC_1e0a1.dir/build
-        make[1]: Entering directory '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq'
-        Building C object CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fd9df/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_fd9df.dir/build.make CMakeFiles/cmTC_fd9df.dir/build
+        make[1]: Entering directory '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf'
+        Building C object CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -1712,8 +1532,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20260209 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1e0a1.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1e0a1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccTbYrQK.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd9df.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fd9df.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cck64EBH.s
         GNU C23 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20260209, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1727,14 +1547,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 4a3176b8a5098bb872007d0a1d5e5fb3
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1e0a1.dir/'
-         as -v --64 -o CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o /tmp/ccTbYrQK.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd9df.dir/'
+         as -v --64 -o CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o /tmp/cck64EBH.s
         GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_1e0a1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e0a1.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_fd9df
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd9df.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1745,14 +1565,14 @@ events:
         gcc version 15.2.1 20260209 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1e0a1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1e0a1.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbC5C9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1e0a1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd9df' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fd9df.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrtp3j4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fd9df /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20260209
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbC5C9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1e0a1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrtp3j4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fd9df /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1e0a1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1e0a1.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -o cmTC_1e0a1
-        make[1]: Leaving directory '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd9df' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fd9df.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -o cmTC_fd9df
+        make[1]: Leaving directory '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf'
         
       exitCode: 0
   -
@@ -1787,13 +1607,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq']
+        ignore line: [Change Dir: '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1e0a1/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_1e0a1.dir/build.make CMakeFiles/cmTC_1e0a1.dir/build]
-        ignore line: [make[1]: Entering directory '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-0S4Ckq']
-        ignore line: [Building C object CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fd9df/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_fd9df.dir/build.make CMakeFiles/cmTC_fd9df.dir/build]
+        ignore line: [make[1]: Entering directory '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-WUVInf']
+        ignore line: [Building C object CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1801,8 +1621,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1e0a1.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1e0a1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccTbYrQK.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd9df.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fd9df.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cck64EBH.s]
         ignore line: [GNU C23 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20260209  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1816,14 +1636,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 4a3176b8a5098bb872007d0a1d5e5fb3]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1e0a1.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o /tmp/ccTbYrQK.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd9df.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o /tmp/cck64EBH.s]
         ignore line: [GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_1e0a1]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e0a1.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_fd9df]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd9df.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1834,13 +1654,13 @@ events:
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1e0a1' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1e0a1.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbC5C9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1e0a1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fd9df' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fd9df.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrtp3j4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fd9df /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccPbC5C9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccrtp3j4.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1855,7 +1675,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1e0a1] ==> ignore
+          arg [cmTC_fd9df] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1867,7 +1687,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -1882,7 +1702,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20260209]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbC5C9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1e0a1 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1e0a1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrtp3j4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fd9df /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_fd9df.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1919,8 +1739,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn"
-      binary: "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn"
+      source: "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY"
+      binary: "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1930,13 +1750,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn'
+        Change Dir: '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f180/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_1f180.dir/build.make CMakeFiles/cmTC_1f180.dir/build
-        make[1]: Entering directory '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn'
-        Building CXX object CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_592f7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_592f7.dir/build.make CMakeFiles/cmTC_592f7.dir/build
+        make[1]: Entering directory '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY'
+        Building CXX object CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -1944,8 +1764,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20260209 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1f180.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1f180.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cceEdZKT.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_592f7.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_592f7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccsi74dL.s
         GNU C++17 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20260209, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1962,14 +1782,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 5e3969de92aa3c12a625237f01b15b2f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1f180.dir/'
-         as -v --64 -o CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o /tmp/cceEdZKT.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_592f7.dir/'
+         as -v --64 -o CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccsi74dL.s
         GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_1f180
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f180.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_592f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_592f7.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1980,14 +1800,14 @@ events:
         gcc version 15.2.1 20260209 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1f180' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1f180.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn3ri1W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1f180 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_592f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_592f7.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1lb5Ya.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_592f7 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20260209
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn3ri1W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1f180 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1lb5Ya.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_592f7 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1f180' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1f180.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1f180
-        make[1]: Leaving directory '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_592f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_592f7.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_592f7
+        make[1]: Leaving directory '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY'
         
       exitCode: 0
   -
@@ -2028,13 +1848,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn']
+        ignore line: [Change Dir: '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f180/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_1f180.dir/build.make CMakeFiles/cmTC_1f180.dir/build]
-        ignore line: [make[1]: Entering directory '/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-jktjmn']
-        ignore line: [Building CXX object CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_592f7/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_592f7.dir/build.make CMakeFiles/cmTC_592f7.dir/build]
+        ignore line: [make[1]: Entering directory '/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/CMakeScratch/TryCompile-Zzy8YY']
+        ignore line: [Building CXX object CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -2042,8 +1862,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1f180.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1f180.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cceEdZKT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_592f7.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_592f7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccsi74dL.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20260209  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2060,14 +1880,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 5e3969de92aa3c12a625237f01b15b2f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1f180.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o /tmp/cceEdZKT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_592f7.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccsi74dL.s]
         ignore line: [GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_1f180]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f180.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_592f7]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_592f7.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -2078,13 +1898,13 @@ events:
         ignore line: [gcc version 15.2.1 20260209 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1f180' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1f180.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn3ri1W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1f180 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_592f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_592f7.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1lb5Ya.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_592f7 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccn3ri1W.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1lb5Ya.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -2099,7 +1919,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_1f180] ==> ignore
+          arg [cmTC_592f7] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -2111,7 +1931,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -2122,7 +1942,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20260209]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn3ri1W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_1f180 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_1f180.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1lb5Ya.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_592f7 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_592f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -2186,27 +2006,19 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
+        path: "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
+        path: "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/.local/share/mamba/envs/global/OpenCVConfig.cmake"
+        path: "/home/launzoa/.local/share/mise/installs/java/25.0.2/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/.local/share/mamba/envs/global/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/launzoa/.local/share/mise/installs/java/25.0.1/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/launzoa/.local/share/mise/installs/java/25.0.1/opencv-config.cmake"
+        path: "/home/launzoa/.local/share/mise/installs/java/25.0.2/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2218,11 +2030,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/.local/share/mise/installs/python/3.14.2/OpenCVConfig.cmake"
+        path: "/home/launzoa/.local/share/mise/installs/python/3.14.3/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/.local/share/mise/installs/python/3.14.2/opencv-config.cmake"
+        path: "/home/launzoa/.local/share/mise/installs/python/3.14.3/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2242,11 +2054,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/.juliaup/OpenCVConfig.cmake"
+        path: "/home/launzoa/.local/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/launzoa/.juliaup/opencv-config.cmake"
+        path: "/home/launzoa/.local/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2271,27 +2083,25 @@ events:
       version: "4.13.0"
     search_context:
       ENV{PATH}:
-        - "/home/launzoa/.local/share/mamba/envs/global/bin"
-        - "/opt/miniconda3/bin"
-        - "/home/launzoa/.local/share/mise/installs/java/25.0.1/bin"
+        - "/home/launzoa/.local/share/mise/installs/java/25.0.2/bin"
         - "/home/launzoa/.local/share/mise/installs/node/25.2.1/bin"
-        - "/home/launzoa/.local/share/mise/installs/python/3.14.2/bin"
+        - "/home/launzoa/.local/share/mise/installs/python/3.14.3/bin"
+        - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/omarchy/bin"
         - "/home/launzoa/.local/share/mise/shims"
         - "/home/launzoa/.local/share/omarchy/bin"
-        - "/home/launzoa/.juliaup/bin"
+        - "/home/launzoa/.local/share/../bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/home/launzoa/.local/share/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/home/launzoa/.local/bin"
+        - "/home/launzoa/.local/bin"
         - "/home/launzoa/.local/share/nvim/mason/bin"
-        - "/home/launzoa/.local/share/mamba/condabin"
-        - "/opt/miniconda3/bin"
+        - "/home/launzoa/micromamba/condabin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"

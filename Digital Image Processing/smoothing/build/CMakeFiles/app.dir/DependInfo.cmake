@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
-  "/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/spatial_filters.cpp" "CMakeFiles/app.dir/src/spatial_filters.cpp.o" "gcc" "CMakeFiles/app.dir/src/spatial_filters.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/src/spatial_filters.cpp" "CMakeFiles/app.dir/src/spatial_filters.cpp.o" "gcc" "CMakeFiles/app.dir/src/spatial_filters.cpp.o.d"
   "" "app" "gcc" "CMakeFiles/app.dir/link.d"
   )
 

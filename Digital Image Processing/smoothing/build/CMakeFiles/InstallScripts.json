@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/launzoa/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/cmake_install.cmake"
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital Image Processing/smoothing/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
