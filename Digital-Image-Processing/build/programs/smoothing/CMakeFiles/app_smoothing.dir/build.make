@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 # Include any dependencies generated for this target.
 include programs/smoothing/CMakeFiles/app_smoothing.dir/depend.make
@@ -73,18 +73,18 @@ programs/smoothing/CMakeFiles/app_smoothing.dir/codegen:
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/codegen
 
 programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o: programs/smoothing/CMakeFiles/app_smoothing.dir/flags.make
-programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp
+programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp
 programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o: programs/smoothing/CMakeFiles/app_smoothing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o"
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o -MF CMakeFiles/app_smoothing.dir/main.cpp.o.d -o CMakeFiles/app_smoothing.dir/main.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o"
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o -MF CMakeFiles/app_smoothing.dir/main.cpp.o.d -o CMakeFiles/app_smoothing.dir/main.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp
 
 programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app_smoothing.dir/main.cpp.i"
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp > CMakeFiles/app_smoothing.dir/main.cpp.i
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp > CMakeFiles/app_smoothing.dir/main.cpp.i
 
 programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app_smoothing.dir/main.cpp.s"
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp -o CMakeFiles/app_smoothing.dir/main.cpp.s
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp -o CMakeFiles/app_smoothing.dir/main.cpp.s
 
 # Object files for target app_smoothing
 app_smoothing_OBJECTS = \
@@ -155,18 +155,18 @@ programs/smoothing/app_smoothing: /usr/lib/libopencv_photo.so.4.13.0
 programs/smoothing/app_smoothing: /usr/lib/libopencv_imgproc.so.4.13.0
 programs/smoothing/app_smoothing: /usr/lib/libopencv_core.so.4.13.0
 programs/smoothing/app_smoothing: programs/smoothing/CMakeFiles/app_smoothing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_smoothing"
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_smoothing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_smoothing"
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_smoothing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 programs/smoothing/CMakeFiles/app_smoothing.dir/build: programs/smoothing/app_smoothing
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/build
 
 programs/smoothing/CMakeFiles/app_smoothing.dir/clean:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && $(CMAKE_COMMAND) -P CMakeFiles/app_smoothing.dir/cmake_clean.cmake
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing && $(CMAKE_COMMAND) -P CMakeFiles/app_smoothing.dir/cmake_clean.cmake
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/clean
 
 programs/smoothing/CMakeFiles/app_smoothing.dir/depend:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing/CMakeFiles/app_smoothing.dir/DependInfo.cmake "--color=$(COLOR)" app_smoothing
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing/CMakeFiles/app_smoothing.dir/DependInfo.cmake "--color=$(COLOR)" app_smoothing
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/depend
 

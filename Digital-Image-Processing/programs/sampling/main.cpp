@@ -1,4 +1,4 @@
-#include "operations.h"
+#include "sampling.h"
 #include <iostream>
 #include <opencv2/highgui.hpp>
 #include <opencv4/opencv2/opencv.hpp>

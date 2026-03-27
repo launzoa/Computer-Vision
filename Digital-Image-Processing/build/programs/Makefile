@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs//CMakeFiles/progress.marks
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs//CMakeFiles/progress.marks
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/clean
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/preinstall
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/preinstall
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

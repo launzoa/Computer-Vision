@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,6 +130,58 @@ dip_core/fast:
 .PHONY : dip_core/fast
 
 #=============================================================================
+# Target rules for targets named app_colors
+
+# Build rule for target.
+app_colors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_colors
+.PHONY : app_colors
+
+# fast build rule for target.
+app_colors/fast:
+	$(MAKE) $(MAKESILENT) -f programs/colors/CMakeFiles/app_colors.dir/build.make programs/colors/CMakeFiles/app_colors.dir/build
+.PHONY : app_colors/fast
+
+#=============================================================================
+# Target rules for targets named app_sampling
+
+# Build rule for target.
+app_sampling: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_sampling
+.PHONY : app_sampling
+
+# fast build rule for target.
+app_sampling/fast:
+	$(MAKE) $(MAKESILENT) -f programs/sampling/CMakeFiles/app_sampling.dir/build.make programs/sampling/CMakeFiles/app_sampling.dir/build
+.PHONY : app_sampling/fast
+
+#=============================================================================
+# Target rules for targets named app_interpolations
+
+# Build rule for target.
+app_interpolations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_interpolations
+.PHONY : app_interpolations
+
+# fast build rule for target.
+app_interpolations/fast:
+	$(MAKE) $(MAKESILENT) -f programs/interpolations/CMakeFiles/app_interpolations.dir/build.make programs/interpolations/CMakeFiles/app_interpolations.dir/build
+.PHONY : app_interpolations/fast
+
+#=============================================================================
+# Target rules for targets named app_equalizations
+
+# Build rule for target.
+app_equalizations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_equalizations
+.PHONY : app_equalizations
+
+# fast build rule for target.
+app_equalizations/fast:
+	$(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/build
+.PHONY : app_equalizations/fast
+
+#=============================================================================
 # Target rules for targets named app_smoothing
 
 # Build rule for target.
@@ -142,6 +194,19 @@ app_smoothing/fast:
 	$(MAKE) $(MAKESILENT) -f programs/smoothing/CMakeFiles/app_smoothing.dir/build.make programs/smoothing/CMakeFiles/app_smoothing.dir/build
 .PHONY : app_smoothing/fast
 
+#=============================================================================
+# Target rules for targets named app_limiars
+
+# Build rule for target.
+app_limiars: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_limiars
+.PHONY : app_limiars
+
+# fast build rule for target.
+app_limiars/fast:
+	$(MAKE) $(MAKESILENT) -f programs/limiars/CMakeFiles/app_limiars.dir/build.make programs/limiars/CMakeFiles/app_limiars.dir/build
+.PHONY : app_limiars/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +215,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... app_colors"
+	@echo "... app_equalizations"
+	@echo "... app_interpolations"
+	@echo "... app_limiars"
+	@echo "... app_sampling"
 	@echo "... app_smoothing"
 	@echo "... dip_core"
 .PHONY : help

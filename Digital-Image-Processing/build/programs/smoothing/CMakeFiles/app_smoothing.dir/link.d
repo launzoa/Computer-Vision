@@ -151,14 +151,12 @@ app_smoothing: \
   /usr/lib/libabsl_hash.so.2508.0.0 \
   /usr/lib/liblapack.so.3 \
   /usr/lib/libcblas.so.3 \
-  /usr/lib32/libgmodule-2.0.so.0 \
   /usr/lib/libgmodule-2.0.so.0 \
   /usr/lib/libunwind.so.8 \
   /usr/lib32/libdw.so.1 \
   /usr/lib/libdw.so.1 \
   /usr/lib32/libffi.so.8 \
   /usr/lib/libffi.so.8 \
-  /usr/lib32/libpcre2-8.so.0 \
   /usr/lib/libpcre2-8.so.0 \
   /usr/lib/libgsttag-1.0.so.0 \
   /usr/lib/libgstallocators-1.0.so.0 \
@@ -226,12 +224,9 @@ app_smoothing: \
   /usr/lib/libx265.so.215 \
   /usr/lib/libxvidcore.so.4 \
   /usr/lib/libglslang.so.16 \
-  /usr/lib32/libva.so.2 \
   /usr/lib/libva.so.2 \
   /usr/lib/libvpl.so.2 \
-  /usr/lib32/libva-drm.so.2 \
   /usr/lib/libva-drm.so.2 \
-  /usr/lib32/libva-x11.so.2 \
   /usr/lib/libva-x11.so.2 \
   /usr/lib/libvdpau.so.1 \
   /usr/lib32/libdrm.so.2 \
@@ -251,7 +246,6 @@ app_smoothing: \
   /usr/lib/libxcb-shape.so.0 \
   /usr/lib32/libxcb-xfixes.so.0 \
   /usr/lib/libxcb-xfixes.so.0 \
-  /usr/lib32/libasound.so.2 \
   /usr/lib/libasound.so.2 \
   /usr/lib/libpulse.so.0 \
   /usr/lib/libsndio.so.7 \
@@ -367,7 +361,6 @@ app_smoothing: \
   /usr/lib/libsodium.so.26 \
   /usr/lib/libpgm-5.3.so.0 \
   /usr/lib/libsoxr.so.0 \
-  /usr/lib32/libgio-2.0.so.0 \
   /usr/lib/libgio-2.0.so.0 \
   /usr/lib/libgdk_pixbuf-2.0.so.0 \
   /usr/lib/libpangocairo-1.0.so.0 \
@@ -382,7 +375,6 @@ app_smoothing: \
   /usr/lib/libSPIRV-Tools-opt.so \
   /usr/lib32/libSPIRV-Tools.so \
   /usr/lib/libSPIRV-Tools.so \
-  /usr/lib32/libXfixes.so.3 \
   /usr/lib/libXfixes.so.3 \
   /usr/lib32/libX11-xcb.so.1 \
   /usr/lib/libX11-xcb.so.1 \
@@ -396,7 +388,6 @@ app_smoothing: \
   /usr/lib/libass.so.9 \
   /usr/lib/libvidstab.so.1.2 \
   /usr/lib/libzimg.so.2 \
-  /usr/lib32/libpipewire-0.3.so.0 \
   /usr/lib/libpipewire-0.3.so.0 \
   /usr/lib32/libXau.so.6 \
   /usr/lib/libXau.so.6 \
@@ -428,7 +419,6 @@ app_smoothing: \
   /usr/lib/libabsl_log_sink.so.2508.0.0 \
   /usr/lib/libabsl_log_sink.so.2508.0.0 \
   /usr/lib/libabsl_log_sink.so.2508.0.0 \
-  /usr/lib32/libmount.so.1 \
   /usr/lib/libmount.so.1 \
   /usr/lib/libglycin-2.so.0 \
   /usr/lib/libpangoft2-1.0.so.0 \
@@ -437,7 +427,6 @@ app_smoothing: \
   /usr/lib/libsamplerate.so.0 \
   /usr/lib/libshaderc_shared.so.1 \
   /usr/lib/libglslang-default-resource-limits.so.16 \
-  /usr/lib32/libvulkan.so.1 \
   /usr/lib/libvulkan.so.1 \
   /usr/lib/liblcms2.so.2 \
   /usr/lib/libdovi.so.3 \
@@ -451,7 +440,6 @@ app_smoothing: \
   /usr/lib/libabsl_exponential_biased.so.2508.0.0 \
   /usr/lib/libabsl_debugging_internal.so.2508.0.0 \
   /usr/lib/libabsl_demangle_internal.so.2508.0.0 \
-  /usr/lib32/libblkid.so.1 \
   /usr/lib/libblkid.so.1 \
   /usr/lib/libseccomp.so.2 \
   /usr/lib/libdatrie.so.1 \
@@ -765,8 +753,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 
 /usr/lib/libcblas.so.3:
 
-/usr/lib32/libgmodule-2.0.so.0:
-
 /usr/lib/libgmodule-2.0.so.0:
 
 /usr/lib/libunwind.so.8:
@@ -778,8 +764,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 /usr/lib32/libffi.so.8:
 
 /usr/lib/libffi.so.8:
-
-/usr/lib32/libpcre2-8.so.0:
 
 /usr/lib/libpcre2-8.so.0:
 
@@ -915,17 +899,11 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 
 /usr/lib/libglslang.so.16:
 
-/usr/lib32/libva.so.2:
-
 /usr/lib/libva.so.2:
 
 /usr/lib/libvpl.so.2:
 
-/usr/lib32/libva-drm.so.2:
-
 /usr/lib/libva-drm.so.2:
-
-/usr/lib32/libva-x11.so.2:
 
 /usr/lib/libva-x11.so.2:
 
@@ -964,8 +942,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 /usr/lib32/libxcb-xfixes.so.0:
 
 /usr/lib/libxcb-xfixes.so.0:
-
-/usr/lib32/libasound.so.2:
 
 /usr/lib/libasound.so.2:
 
@@ -1197,8 +1173,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 
 /usr/lib/libsoxr.so.0:
 
-/usr/lib32/libgio-2.0.so.0:
-
 /usr/lib/libgio-2.0.so.0:
 
 /usr/lib/libgdk_pixbuf-2.0.so.0:
@@ -1227,8 +1201,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 
 /usr/lib/libSPIRV-Tools.so:
 
-/usr/lib32/libXfixes.so.3:
-
 /usr/lib/libXfixes.so.3:
 
 /usr/lib32/libX11-xcb.so.1:
@@ -1254,8 +1226,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 /usr/lib/libvidstab.so.1.2:
 
 /usr/lib/libzimg.so.2:
-
-/usr/lib32/libpipewire-0.3.so.0:
 
 /usr/lib/libpipewire-0.3.so.0:
 
@@ -1319,8 +1289,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 
 /usr/lib/libabsl_log_sink.so.2508.0.0:
 
-/usr/lib32/libmount.so.1:
-
 /usr/lib/libmount.so.1:
 
 /usr/lib/libglycin-2.so.0:
@@ -1336,8 +1304,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 /usr/lib/libshaderc_shared.so.1:
 
 /usr/lib/libglslang-default-resource-limits.so.16:
-
-/usr/lib32/libvulkan.so.1:
 
 /usr/lib/libvulkan.so.1:
 
@@ -1364,8 +1330,6 @@ CMakeFiles/app_smoothing.dir/main.cpp.o:
 /usr/lib/libabsl_debugging_internal.so.2508.0.0:
 
 /usr/lib/libabsl_demangle_internal.so.2508.0.0:
-
-/usr/lib32/libblkid.so.1:
 
 /usr/lib/libblkid.so.1:
 

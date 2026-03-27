@@ -1,10 +1,15 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/cmake_install.cmake",
-		"/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core/cmake_install.cmake",
-		"/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/cmake_install.cmake",
-		"/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing/cmake_install.cmake"
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/colors/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/sampling/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/interpolations/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing/cmake_install.cmake",
+		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

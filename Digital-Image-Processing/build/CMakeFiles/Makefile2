@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -105,20 +105,135 @@ core/clean: core/CMakeFiles/dip_core.dir/clean
 # Directory level rules for directory programs
 
 # Recursive "all" directory target.
+programs/all: programs/colors/all
+programs/all: programs/sampling/all
+programs/all: programs/interpolations/all
+programs/all: programs/equalizations/all
 programs/all: programs/smoothing/all
+programs/all: programs/limiars/all
 .PHONY : programs/all
 
 # Recursive "codegen" directory target.
+programs/codegen: programs/colors/codegen
+programs/codegen: programs/sampling/codegen
+programs/codegen: programs/interpolations/codegen
+programs/codegen: programs/equalizations/codegen
 programs/codegen: programs/smoothing/codegen
+programs/codegen: programs/limiars/codegen
 .PHONY : programs/codegen
 
 # Recursive "preinstall" directory target.
+programs/preinstall: programs/colors/preinstall
+programs/preinstall: programs/sampling/preinstall
+programs/preinstall: programs/interpolations/preinstall
+programs/preinstall: programs/equalizations/preinstall
 programs/preinstall: programs/smoothing/preinstall
+programs/preinstall: programs/limiars/preinstall
 .PHONY : programs/preinstall
 
 # Recursive "clean" directory target.
+programs/clean: programs/colors/clean
+programs/clean: programs/sampling/clean
+programs/clean: programs/interpolations/clean
+programs/clean: programs/equalizations/clean
 programs/clean: programs/smoothing/clean
+programs/clean: programs/limiars/clean
 .PHONY : programs/clean
+
+#=============================================================================
+# Directory level rules for directory programs/colors
+
+# Recursive "all" directory target.
+programs/colors/all: programs/colors/CMakeFiles/app_colors.dir/all
+.PHONY : programs/colors/all
+
+# Recursive "codegen" directory target.
+programs/colors/codegen: programs/colors/CMakeFiles/app_colors.dir/codegen
+.PHONY : programs/colors/codegen
+
+# Recursive "preinstall" directory target.
+programs/colors/preinstall:
+.PHONY : programs/colors/preinstall
+
+# Recursive "clean" directory target.
+programs/colors/clean: programs/colors/CMakeFiles/app_colors.dir/clean
+.PHONY : programs/colors/clean
+
+#=============================================================================
+# Directory level rules for directory programs/equalizations
+
+# Recursive "all" directory target.
+programs/equalizations/all: programs/equalizations/CMakeFiles/app_equalizations.dir/all
+.PHONY : programs/equalizations/all
+
+# Recursive "codegen" directory target.
+programs/equalizations/codegen: programs/equalizations/CMakeFiles/app_equalizations.dir/codegen
+.PHONY : programs/equalizations/codegen
+
+# Recursive "preinstall" directory target.
+programs/equalizations/preinstall:
+.PHONY : programs/equalizations/preinstall
+
+# Recursive "clean" directory target.
+programs/equalizations/clean: programs/equalizations/CMakeFiles/app_equalizations.dir/clean
+.PHONY : programs/equalizations/clean
+
+#=============================================================================
+# Directory level rules for directory programs/interpolations
+
+# Recursive "all" directory target.
+programs/interpolations/all: programs/interpolations/CMakeFiles/app_interpolations.dir/all
+.PHONY : programs/interpolations/all
+
+# Recursive "codegen" directory target.
+programs/interpolations/codegen: programs/interpolations/CMakeFiles/app_interpolations.dir/codegen
+.PHONY : programs/interpolations/codegen
+
+# Recursive "preinstall" directory target.
+programs/interpolations/preinstall:
+.PHONY : programs/interpolations/preinstall
+
+# Recursive "clean" directory target.
+programs/interpolations/clean: programs/interpolations/CMakeFiles/app_interpolations.dir/clean
+.PHONY : programs/interpolations/clean
+
+#=============================================================================
+# Directory level rules for directory programs/limiars
+
+# Recursive "all" directory target.
+programs/limiars/all: programs/limiars/CMakeFiles/app_limiars.dir/all
+.PHONY : programs/limiars/all
+
+# Recursive "codegen" directory target.
+programs/limiars/codegen: programs/limiars/CMakeFiles/app_limiars.dir/codegen
+.PHONY : programs/limiars/codegen
+
+# Recursive "preinstall" directory target.
+programs/limiars/preinstall:
+.PHONY : programs/limiars/preinstall
+
+# Recursive "clean" directory target.
+programs/limiars/clean: programs/limiars/CMakeFiles/app_limiars.dir/clean
+.PHONY : programs/limiars/clean
+
+#=============================================================================
+# Directory level rules for directory programs/sampling
+
+# Recursive "all" directory target.
+programs/sampling/all: programs/sampling/CMakeFiles/app_sampling.dir/all
+.PHONY : programs/sampling/all
+
+# Recursive "codegen" directory target.
+programs/sampling/codegen: programs/sampling/CMakeFiles/app_sampling.dir/codegen
+.PHONY : programs/sampling/codegen
+
+# Recursive "preinstall" directory target.
+programs/sampling/preinstall:
+.PHONY : programs/sampling/preinstall
+
+# Recursive "clean" directory target.
+programs/sampling/clean: programs/sampling/CMakeFiles/app_sampling.dir/clean
+.PHONY : programs/sampling/clean
 
 #=============================================================================
 # Directory level rules for directory programs/smoothing
@@ -146,14 +261,14 @@ programs/smoothing/clean: programs/smoothing/CMakeFiles/app_smoothing.dir/clean
 core/CMakeFiles/dip_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target dip_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target dip_core"
 .PHONY : core/CMakeFiles/dip_core.dir/all
 
 # Build rule for subdir invocation for target.
 core/CMakeFiles/dip_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/dip_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
 .PHONY : core/CMakeFiles/dip_core.dir/rule
 
 # Convenience name for target.
@@ -163,7 +278,7 @@ dip_core: core/CMakeFiles/dip_core.dir/rule
 # codegen rule for target.
 core/CMakeFiles/dip_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target dip_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Finished codegen for target dip_core"
 .PHONY : core/CMakeFiles/dip_core.dir/codegen
 
 # clean rule for target.
@@ -172,20 +287,148 @@ core/CMakeFiles/dip_core.dir/clean:
 .PHONY : core/CMakeFiles/dip_core.dir/clean
 
 #=============================================================================
+# Target rules for target programs/colors/CMakeFiles/app_colors.dir
+
+# All Build rule for target.
+programs/colors/CMakeFiles/app_colors.dir/all: core/CMakeFiles/dip_core.dir/all
+	$(MAKE) $(MAKESILENT) -f programs/colors/CMakeFiles/app_colors.dir/build.make programs/colors/CMakeFiles/app_colors.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs/colors/CMakeFiles/app_colors.dir/build.make programs/colors/CMakeFiles/app_colors.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=1,2 "Built target app_colors"
+.PHONY : programs/colors/CMakeFiles/app_colors.dir/all
+
+# Build rule for subdir invocation for target.
+programs/colors/CMakeFiles/app_colors.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/colors/CMakeFiles/app_colors.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+.PHONY : programs/colors/CMakeFiles/app_colors.dir/rule
+
+# Convenience name for target.
+app_colors: programs/colors/CMakeFiles/app_colors.dir/rule
+.PHONY : app_colors
+
+# codegen rule for target.
+programs/colors/CMakeFiles/app_colors.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs/colors/CMakeFiles/app_colors.dir/build.make programs/colors/CMakeFiles/app_colors.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=1,2 "Finished codegen for target app_colors"
+.PHONY : programs/colors/CMakeFiles/app_colors.dir/codegen
+
+# clean rule for target.
+programs/colors/CMakeFiles/app_colors.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs/colors/CMakeFiles/app_colors.dir/build.make programs/colors/CMakeFiles/app_colors.dir/clean
+.PHONY : programs/colors/CMakeFiles/app_colors.dir/clean
+
+#=============================================================================
+# Target rules for target programs/sampling/CMakeFiles/app_sampling.dir
+
+# All Build rule for target.
+programs/sampling/CMakeFiles/app_sampling.dir/all: core/CMakeFiles/dip_core.dir/all
+	$(MAKE) $(MAKESILENT) -f programs/sampling/CMakeFiles/app_sampling.dir/build.make programs/sampling/CMakeFiles/app_sampling.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs/sampling/CMakeFiles/app_sampling.dir/build.make programs/sampling/CMakeFiles/app_sampling.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=9,10 "Built target app_sampling"
+.PHONY : programs/sampling/CMakeFiles/app_sampling.dir/all
+
+# Build rule for subdir invocation for target.
+programs/sampling/CMakeFiles/app_sampling.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/sampling/CMakeFiles/app_sampling.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+.PHONY : programs/sampling/CMakeFiles/app_sampling.dir/rule
+
+# Convenience name for target.
+app_sampling: programs/sampling/CMakeFiles/app_sampling.dir/rule
+.PHONY : app_sampling
+
+# codegen rule for target.
+programs/sampling/CMakeFiles/app_sampling.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs/sampling/CMakeFiles/app_sampling.dir/build.make programs/sampling/CMakeFiles/app_sampling.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=9,10 "Finished codegen for target app_sampling"
+.PHONY : programs/sampling/CMakeFiles/app_sampling.dir/codegen
+
+# clean rule for target.
+programs/sampling/CMakeFiles/app_sampling.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs/sampling/CMakeFiles/app_sampling.dir/build.make programs/sampling/CMakeFiles/app_sampling.dir/clean
+.PHONY : programs/sampling/CMakeFiles/app_sampling.dir/clean
+
+#=============================================================================
+# Target rules for target programs/interpolations/CMakeFiles/app_interpolations.dir
+
+# All Build rule for target.
+programs/interpolations/CMakeFiles/app_interpolations.dir/all: core/CMakeFiles/dip_core.dir/all
+	$(MAKE) $(MAKESILENT) -f programs/interpolations/CMakeFiles/app_interpolations.dir/build.make programs/interpolations/CMakeFiles/app_interpolations.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs/interpolations/CMakeFiles/app_interpolations.dir/build.make programs/interpolations/CMakeFiles/app_interpolations.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=5,6 "Built target app_interpolations"
+.PHONY : programs/interpolations/CMakeFiles/app_interpolations.dir/all
+
+# Build rule for subdir invocation for target.
+programs/interpolations/CMakeFiles/app_interpolations.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/interpolations/CMakeFiles/app_interpolations.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+.PHONY : programs/interpolations/CMakeFiles/app_interpolations.dir/rule
+
+# Convenience name for target.
+app_interpolations: programs/interpolations/CMakeFiles/app_interpolations.dir/rule
+.PHONY : app_interpolations
+
+# codegen rule for target.
+programs/interpolations/CMakeFiles/app_interpolations.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs/interpolations/CMakeFiles/app_interpolations.dir/build.make programs/interpolations/CMakeFiles/app_interpolations.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=5,6 "Finished codegen for target app_interpolations"
+.PHONY : programs/interpolations/CMakeFiles/app_interpolations.dir/codegen
+
+# clean rule for target.
+programs/interpolations/CMakeFiles/app_interpolations.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs/interpolations/CMakeFiles/app_interpolations.dir/build.make programs/interpolations/CMakeFiles/app_interpolations.dir/clean
+.PHONY : programs/interpolations/CMakeFiles/app_interpolations.dir/clean
+
+#=============================================================================
+# Target rules for target programs/equalizations/CMakeFiles/app_equalizations.dir
+
+# All Build rule for target.
+programs/equalizations/CMakeFiles/app_equalizations.dir/all: core/CMakeFiles/dip_core.dir/all
+	$(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=3,4 "Built target app_equalizations"
+.PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/all
+
+# Build rule for subdir invocation for target.
+programs/equalizations/CMakeFiles/app_equalizations.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/CMakeFiles/app_equalizations.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+.PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/rule
+
+# Convenience name for target.
+app_equalizations: programs/equalizations/CMakeFiles/app_equalizations.dir/rule
+.PHONY : app_equalizations
+
+# codegen rule for target.
+programs/equalizations/CMakeFiles/app_equalizations.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=3,4 "Finished codegen for target app_equalizations"
+.PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/codegen
+
+# clean rule for target.
+programs/equalizations/CMakeFiles/app_equalizations.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/clean
+.PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/clean
+
+#=============================================================================
 # Target rules for target programs/smoothing/CMakeFiles/app_smoothing.dir
 
 # All Build rule for target.
 programs/smoothing/CMakeFiles/app_smoothing.dir/all: core/CMakeFiles/dip_core.dir/all
 	$(MAKE) $(MAKESILENT) -f programs/smoothing/CMakeFiles/app_smoothing.dir/build.make programs/smoothing/CMakeFiles/app_smoothing.dir/depend
 	$(MAKE) $(MAKESILENT) -f programs/smoothing/CMakeFiles/app_smoothing.dir/build.make programs/smoothing/CMakeFiles/app_smoothing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=1,2 "Built target app_smoothing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=11,12 "Built target app_smoothing"
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/all
 
 # Build rule for subdir invocation for target.
 programs/smoothing/CMakeFiles/app_smoothing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/smoothing/CMakeFiles/app_smoothing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/rule
 
 # Convenience name for target.
@@ -195,13 +438,45 @@ app_smoothing: programs/smoothing/CMakeFiles/app_smoothing.dir/rule
 # codegen rule for target.
 programs/smoothing/CMakeFiles/app_smoothing.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f programs/smoothing/CMakeFiles/app_smoothing.dir/build.make programs/smoothing/CMakeFiles/app_smoothing.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=1,2 "Finished codegen for target app_smoothing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=11,12 "Finished codegen for target app_smoothing"
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/codegen
 
 # clean rule for target.
 programs/smoothing/CMakeFiles/app_smoothing.dir/clean:
 	$(MAKE) $(MAKESILENT) -f programs/smoothing/CMakeFiles/app_smoothing.dir/build.make programs/smoothing/CMakeFiles/app_smoothing.dir/clean
 .PHONY : programs/smoothing/CMakeFiles/app_smoothing.dir/clean
+
+#=============================================================================
+# Target rules for target programs/limiars/CMakeFiles/app_limiars.dir
+
+# All Build rule for target.
+programs/limiars/CMakeFiles/app_limiars.dir/all: core/CMakeFiles/dip_core.dir/all
+	$(MAKE) $(MAKESILENT) -f programs/limiars/CMakeFiles/app_limiars.dir/build.make programs/limiars/CMakeFiles/app_limiars.dir/depend
+	$(MAKE) $(MAKESILENT) -f programs/limiars/CMakeFiles/app_limiars.dir/build.make programs/limiars/CMakeFiles/app_limiars.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=7,8 "Built target app_limiars"
+.PHONY : programs/limiars/CMakeFiles/app_limiars.dir/all
+
+# Build rule for subdir invocation for target.
+programs/limiars/CMakeFiles/app_limiars.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/limiars/CMakeFiles/app_limiars.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+.PHONY : programs/limiars/CMakeFiles/app_limiars.dir/rule
+
+# Convenience name for target.
+app_limiars: programs/limiars/CMakeFiles/app_limiars.dir/rule
+.PHONY : app_limiars
+
+# codegen rule for target.
+programs/limiars/CMakeFiles/app_limiars.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f programs/limiars/CMakeFiles/app_limiars.dir/build.make programs/limiars/CMakeFiles/app_limiars.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=7,8 "Finished codegen for target app_limiars"
+.PHONY : programs/limiars/CMakeFiles/app_limiars.dir/codegen
+
+# clean rule for target.
+programs/limiars/CMakeFiles/app_limiars.dir/clean:
+	$(MAKE) $(MAKESILENT) -f programs/limiars/CMakeFiles/app_limiars.dir/build.make programs/limiars/CMakeFiles/app_limiars.dir/clean
+.PHONY : programs/limiars/CMakeFiles/app_limiars.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

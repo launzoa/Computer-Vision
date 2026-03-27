@@ -1,7 +1,7 @@
 core/CMakeFiles/dip_core.dir/src/sampling.cpp.o: \
- /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/sampling.cpp \
+ /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/sampling.cpp \
  /usr/include/stdc-predef.h \
- /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include/sampling.h \
+ /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/include/sampling.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

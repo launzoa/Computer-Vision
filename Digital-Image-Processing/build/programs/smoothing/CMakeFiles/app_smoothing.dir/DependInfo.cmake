@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp" "programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o" "gcc" "programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp" "programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o" "gcc" "programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o.d"
   "" "programs/smoothing/app_smoothing" "gcc" "programs/smoothing/CMakeFiles/app_smoothing.dir/link.d"
   )
 

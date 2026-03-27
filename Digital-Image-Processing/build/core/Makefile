@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core//CMakeFiles/progress.marks
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core//CMakeFiles/progress.marks
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/clean
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/preinstall
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/preinstall
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 core/CMakeFiles/dip_core.dir/rule:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/dip_core.dir/rule
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/dip_core.dir/rule
 .PHONY : core/CMakeFiles/dip_core.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ dip_core: core/CMakeFiles/dip_core.dir/rule
 
 # fast build rule for target.
 dip_core/fast:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/build
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/build
 .PHONY : dip_core/fast
 
 src/colors.o: src/colors.cpp.o
@@ -135,7 +135,7 @@ src/colors.o: src/colors.cpp.o
 
 # target to build an object file
 src/colors.cpp.o:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/colors.cpp.o
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/colors.cpp.o
 .PHONY : src/colors.cpp.o
 
 src/colors.i: src/colors.cpp.i
@@ -143,7 +143,7 @@ src/colors.i: src/colors.cpp.i
 
 # target to preprocess a source file
 src/colors.cpp.i:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/colors.cpp.i
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/colors.cpp.i
 .PHONY : src/colors.cpp.i
 
 src/colors.s: src/colors.cpp.s
@@ -151,7 +151,7 @@ src/colors.s: src/colors.cpp.s
 
 # target to generate assembly for a file
 src/colors.cpp.s:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/colors.cpp.s
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/colors.cpp.s
 .PHONY : src/colors.cpp.s
 
 src/equalizations.o: src/equalizations.cpp.o
@@ -159,7 +159,7 @@ src/equalizations.o: src/equalizations.cpp.o
 
 # target to build an object file
 src/equalizations.cpp.o:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o
 .PHONY : src/equalizations.cpp.o
 
 src/equalizations.i: src/equalizations.cpp.i
@@ -167,7 +167,7 @@ src/equalizations.i: src/equalizations.cpp.i
 
 # target to preprocess a source file
 src/equalizations.cpp.i:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/equalizations.cpp.i
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/equalizations.cpp.i
 .PHONY : src/equalizations.cpp.i
 
 src/equalizations.s: src/equalizations.cpp.s
@@ -175,7 +175,7 @@ src/equalizations.s: src/equalizations.cpp.s
 
 # target to generate assembly for a file
 src/equalizations.cpp.s:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/equalizations.cpp.s
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/equalizations.cpp.s
 .PHONY : src/equalizations.cpp.s
 
 src/interpolations.o: src/interpolations.cpp.o
@@ -183,7 +183,7 @@ src/interpolations.o: src/interpolations.cpp.o
 
 # target to build an object file
 src/interpolations.cpp.o:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o
 .PHONY : src/interpolations.cpp.o
 
 src/interpolations.i: src/interpolations.cpp.i
@@ -191,7 +191,7 @@ src/interpolations.i: src/interpolations.cpp.i
 
 # target to preprocess a source file
 src/interpolations.cpp.i:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/interpolations.cpp.i
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/interpolations.cpp.i
 .PHONY : src/interpolations.cpp.i
 
 src/interpolations.s: src/interpolations.cpp.s
@@ -199,7 +199,7 @@ src/interpolations.s: src/interpolations.cpp.s
 
 # target to generate assembly for a file
 src/interpolations.cpp.s:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/interpolations.cpp.s
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/interpolations.cpp.s
 .PHONY : src/interpolations.cpp.s
 
 src/sampling.o: src/sampling.cpp.o
@@ -207,7 +207,7 @@ src/sampling.o: src/sampling.cpp.o
 
 # target to build an object file
 src/sampling.cpp.o:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/sampling.cpp.o
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/sampling.cpp.o
 .PHONY : src/sampling.cpp.o
 
 src/sampling.i: src/sampling.cpp.i
@@ -215,7 +215,7 @@ src/sampling.i: src/sampling.cpp.i
 
 # target to preprocess a source file
 src/sampling.cpp.i:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/sampling.cpp.i
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/sampling.cpp.i
 .PHONY : src/sampling.cpp.i
 
 src/sampling.s: src/sampling.cpp.s
@@ -223,7 +223,7 @@ src/sampling.s: src/sampling.cpp.s
 
 # target to generate assembly for a file
 src/sampling.cpp.s:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/sampling.cpp.s
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/sampling.cpp.s
 .PHONY : src/sampling.cpp.s
 
 src/spatial_filters.o: src/spatial_filters.cpp.o
@@ -231,7 +231,7 @@ src/spatial_filters.o: src/spatial_filters.cpp.o
 
 # target to build an object file
 src/spatial_filters.cpp.o:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o
 .PHONY : src/spatial_filters.cpp.o
 
 src/spatial_filters.i: src/spatial_filters.cpp.i
@@ -239,7 +239,7 @@ src/spatial_filters.i: src/spatial_filters.cpp.i
 
 # target to preprocess a source file
 src/spatial_filters.cpp.i:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.i
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.i
 .PHONY : src/spatial_filters.cpp.i
 
 src/spatial_filters.s: src/spatial_filters.cpp.s
@@ -247,7 +247,7 @@ src/spatial_filters.s: src/spatial_filters.cpp.s
 
 # target to generate assembly for a file
 src/spatial_filters.cpp.s:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.s
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.s
 .PHONY : src/spatial_filters.cpp.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
