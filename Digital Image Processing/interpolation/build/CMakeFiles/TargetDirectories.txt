@@ -1,3 +1,0 @@
-/home/launzoa/GitHub/Computer Vision/Digital Image Processing/interpolation/build/CMakeFiles/app.dir
-/home/launzoa/GitHub/Computer Vision/Digital Image Processing/interpolation/build/CMakeFiles/edit_cache.dir
-/home/launzoa/GitHub/Computer Vision/Digital Image Processing/interpolation/build/CMakeFiles/rebuild_cache.dir

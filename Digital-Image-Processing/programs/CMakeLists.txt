@@ -1,0 +1,5 @@
+add_subdirectory(colors)
+add_subdirectory(sampling)
+add_subdirectory(interpolations)
+add_subdirectory(equalizations)
+add_subdirectory(smoothing)

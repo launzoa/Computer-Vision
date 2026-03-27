@@ -1,0 +1,2 @@
+add_executable(app_equalizations main.cpp)
+target_link_libraries(app_equalizations dip_core)
