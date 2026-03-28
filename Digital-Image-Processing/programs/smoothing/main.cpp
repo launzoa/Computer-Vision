@@ -22,11 +22,12 @@ int main() {
   salt_and_pepper(img, 10);
 
   Mat img_mean = mean_filter(img, 3);
+  Mat img_median = median_filter(img, 3);
 
   namedWindow("DIP", WINDOW_AUTOSIZE);
 
   Mat screen;
-  vector<Mat> arr_imgs = {img, img_mean};
+  vector<Mat> arr_imgs = {img, img_mean, img_median};
   hconcat(arr_imgs, screen);
 
   imshow("DIP", screen);

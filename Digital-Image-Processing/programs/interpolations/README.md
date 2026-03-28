@@ -1,9 +1,9 @@
-Um simples programa introdutório em C++ utilizando a biblioteca OpenCV para abrir e manipular imagens. O objetivo principal é por em prática os fundamentos da manipulação direta de pixels e operações do livro de processamento digital de imagens do Gonzalez.
+* **Interpolação pelo Vizinho Mais Próximo (Nearest Neighbor):** É o método de reamostragem mais simples e computacionalmente leve. O algoritmo mapeia a coordenada do novo pixel de volta para a imagem original e arredonda o valor fracionário para o índice inteiro mais próximo. Embora rápido, este método preserva as bordas originais de forma bruta, resultando no efeito de "pixelização" (aliasing) evidente em grandes ampliações.
+* **Interpolação Bilinear:** Aplica uma abordagem de vizinhança $2 \times 2$. O algoritmo identifica os quatro pixels mais próximos à coordenada fracionária mapeada na imagem original e calcula o novo valor através de interpolações lineares sucessivas nas direções $x$ e $y$. As intensidades são ponderadas pela distância em relação à coordenada exata, resultando em transições visuais muito mais suaves que o vizinho mais próximo, embora possa introduzir um leve borramento (blur) nas arestas.
+* **Interpolação Bicúbica:** O método mais sofisticado implementado, utilizando uma vizinhança $4 \times 4$ (16 pixels) ao redor da coordenada mapeada. Em vez de uma interpolação puramente linear, os valores de intensidade são ponderados por uma função de convolução cúbica que considera não apenas os valores dos pixels adjacentes, mas também a taxa de variação entre eles, resultando em imagens redimensionadas com maior nitidez e melhor preservação de detalhes. A função de peso $W(x)$ implementada utiliza o parâmetro $a = -0.5$ e é matematicamente definida por:
 
-O programa carrega uma imagem base e abre uma janela que exibe a imagem original e a versão modificada lado a lado. Através do teclado, é possível aplicar os seguintes filtros em tempo real:
+$$
+W(x) = \begin{cases} (a+2)|x|^3 - (a+3)|x|^2 + 1 & \text{se } |x| \le 1 \\ a|x|^3 - 5a|x|^2 + 8a|x| - 4a & \text{se } 1 < |x| < 2 \\ 0 & \text{caso contrário} \end{cases}
+$$
 
-* **`1` - Escala de Cinza (Grayscale):** Converte a imagem colorida calculando a média aritmética dos canais BGR de cada pixel.
-* **`2` - Inversão em Tons de Cinza:** Aplica o efeito de negativo fotográfico sobre a imagem já convertida para tons de cinza.
-* **`3` - Inversão de Cores (Negativo):** Inverte os valores de cada canal de cor (RGB) subtraindo o valor atual de 255.
-* **`Espaço` - Salvar/Acumular Efeito:** Retorna para a imagem original.
-* **`ESC` - Sair:** Encerra a aplicação de forma segura.
+Em todas as funções, o mapeamento de coordenadas (especialmente nas expansões de vizinhança da interpolação bilinear e bicúbica) é protegido contra acessos fora dos limites da matriz utilizando restrições de limite estritas (clamping com `min` e `max`), garantindo a estabilidade da memória (e.g., *Segmentation Fault*) ao processar as extremidades da imagem original.

@@ -8,7 +8,7 @@ using namespace cv;
 
 int main() {
 
-  Mat img = imread("assets/Lena320x240.jpg", IMREAD_COLOR);
+  Mat img = imread("../assets/Lena320x240.jpg", IMREAD_COLOR);
 
   double scale;
   cout << "Escala para as interpolações: ";
@@ -18,13 +18,13 @@ int main() {
   Mat img_bilinear = bilinear(img, scale);
   Mat img_bicubic = bicubic(img, scale);
 
-  namedWindow("Interpolation", WINDOW_AUTOSIZE);
+  namedWindow("DIP", WINDOW_AUTOSIZE);
 
   Mat screen;
   vector<Mat> array_imagens = {img_nN, img_bilinear, img_bicubic};
   hconcat(array_imagens, screen);
 
-  imshow("Interpolation", screen);
+  imshow("DIP", screen);
   waitKey(0);
 
   return 0;

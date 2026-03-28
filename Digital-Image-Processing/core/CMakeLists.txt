@@ -1,9 +1,9 @@
 set(CORE_SOURCES
     src/colors.cpp
-    src/sampling.cpp
     src/interpolations.cpp
     src/equalizations.cpp
     src/spatial_filters.cpp
+    src/limiars.cpp
 )
 
 add_library(dip_core ${CORE_SOURCES})

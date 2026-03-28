@@ -1,4 +1,4 @@
-# Install script for directory: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations
+# Install script for directory: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/interpolations/install_local_manifest.txt"
+  file(WRITE "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/interpolations/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,7 +1,7 @@
 programs/sampling/CMakeFiles/app_sampling.dir/main.cpp.o: \
- /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/sampling/main.cpp \
+ /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/sampling/main.cpp \
  /usr/include/stdc-predef.h \
- /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/include/sampling.h \
+ /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include/sampling.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

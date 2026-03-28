@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/colors/main.cpp" "programs/colors/CMakeFiles/app_colors.dir/main.cpp.o" "gcc" "programs/colors/CMakeFiles/app_colors.dir/main.cpp.o.d"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/colors/main.cpp" "programs/colors/CMakeFiles/app_colors.dir/main.cpp.o" "gcc" "programs/colors/CMakeFiles/app_colors.dir/main.cpp.o.d"
   "" "programs/colors/app_colors" "gcc" "programs/colors/CMakeFiles/app_colors.dir/link.d"
   )
 

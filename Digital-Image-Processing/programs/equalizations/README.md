@@ -1,9 +1,10 @@
-Um simples programa introdutório em C++ utilizando a biblioteca OpenCV para abrir e manipular imagens. O objetivo principal é por em prática os fundamentos da manipulação direta de pixels e operações do livro de processamento digital de imagens do Gonzalez.
+* **Frequência Cumulativa (Cumulative Distribution Function - CDF):** O algoritmo realiza uma varredura inicial na imagem para construir o histograma de tons de cinza (convertendo os canais BGR através de média aritmética). Em seguida, calcula a soma cumulativa das ocorrências de cada nível de intensidade de 0 a 255. Esta etapa representa a aproximação discreta da função de distribuição acumulada da imagem original.
+* **Equalização de Histograma:** O processo principal que mapeia os níveis de cinza originais para novos valores, buscando uma distribuição de intensidades mais uniforme ("plana"). O algoritmo percorre a imagem uma segunda vez e aplica a função de transformação aos pixels originais, definida matematicamente pela fórmula:
 
-O programa carrega uma imagem base e abre uma janela que exibe a imagem original e a versão modificada lado a lado. Através do teclado, é possível aplicar os seguintes filtros em tempo real:
+$$
+s = \text{round}\left( \frac{L-1}{M \times N} \times \text{cdf}(r) \right)
+$$
 
-* **`1` - Escala de Cinza (Grayscale):** Converte a imagem colorida calculando a média aritmética dos canais BGR de cada pixel.
-* **`2` - Inversão em Tons de Cinza:** Aplica o efeito de negativo fotográfico sobre a imagem já convertida para tons de cinza.
-* **`3` - Inversão de Cores (Negativo):** Inverte os valores de cada canal de cor (RGB) subtraindo o valor atual de 255.
-* **`Espaço` - Salvar/Acumular Efeito:** Retorna para a imagem original.
-* **`ESC` - Sair:** Encerra a aplicação de forma segura.
+Onde $s$ é a nova intensidade equalizada, $r$ é a intensidade original do pixel, $L-1 = 255$ é o nível máximo de cinza, $M \times N$ representa o número total de pixels da imagem (área) e $\text{cdf}(r)$ é o valor da frequência cumulativa para aquele tom de cinza específico. Esta técnica aumenta o contraste global da imagem, revelando detalhes em áreas que originalmente se apresentavam sub ou superexpostas.
+
+O algoritmo simplifica o processamento realizando a equalização diretamente sobre uma estimativa em tons de cinza de uma imagem colorida, replicando o valor equalizado ($s$) de volta para os três canais BGR do pixel de saída.

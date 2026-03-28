@@ -1,2 +1,2 @@
-/usr/bin/ar qc libdip_core.a CMakeFiles/dip_core.dir/src/colors.cpp.o CMakeFiles/dip_core.dir/src/sampling.cpp.o CMakeFiles/dip_core.dir/src/interpolations.cpp.o CMakeFiles/dip_core.dir/src/equalizations.cpp.o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o
+/usr/bin/ar qc libdip_core.a CMakeFiles/dip_core.dir/src/colors.cpp.o CMakeFiles/dip_core.dir/src/interpolations.cpp.o CMakeFiles/dip_core.dir/src/equalizations.cpp.o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o CMakeFiles/dip_core.dir/src/limiars.cpp.o
 /usr/bin/ranlib libdip_core.a

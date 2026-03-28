@@ -1,4 +1,4 @@
-# Install script for directory: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
+# Install script for directory: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,15 +44,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core/cmake_install.cmake")
-  include("/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/cmake_install.cmake")
+  include("/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core/cmake_install.cmake")
+  include("/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/install_local_manifest.txt"
+  file(WRITE "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -68,6 +68,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

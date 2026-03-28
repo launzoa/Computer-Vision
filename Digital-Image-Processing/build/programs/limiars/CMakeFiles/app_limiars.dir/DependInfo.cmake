@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp" "programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o" "gcc" "programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o.d"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp" "programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o" "gcc" "programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o.d"
   "" "programs/limiars/app_limiars" "gcc" "programs/limiars/CMakeFiles/app_limiars.dir/link.d"
   )
 

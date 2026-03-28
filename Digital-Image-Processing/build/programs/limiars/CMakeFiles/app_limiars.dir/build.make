@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 # Include any dependencies generated for this target.
 include programs/limiars/CMakeFiles/app_limiars.dir/depend.make
@@ -73,18 +73,18 @@ programs/limiars/CMakeFiles/app_limiars.dir/codegen:
 .PHONY : programs/limiars/CMakeFiles/app_limiars.dir/codegen
 
 programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o: programs/limiars/CMakeFiles/app_limiars.dir/flags.make
-programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp
+programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp
 programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o: programs/limiars/CMakeFiles/app_limiars.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o -MF CMakeFiles/app_limiars.dir/main.cpp.o.d -o CMakeFiles/app_limiars.dir/main.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.o -MF CMakeFiles/app_limiars.dir/main.cpp.o.d -o CMakeFiles/app_limiars.dir/main.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp
 
 programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app_limiars.dir/main.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp > CMakeFiles/app_limiars.dir/main.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp > CMakeFiles/app_limiars.dir/main.cpp.i
 
 programs/limiars/CMakeFiles/app_limiars.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app_limiars.dir/main.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp -o CMakeFiles/app_limiars.dir/main.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/main.cpp -o CMakeFiles/app_limiars.dir/main.cpp.s
 
 # Object files for target app_limiars
 app_limiars_OBJECTS = \
@@ -155,18 +155,18 @@ programs/limiars/app_limiars: /usr/lib/libopencv_photo.so.4.13.0
 programs/limiars/app_limiars: /usr/lib/libopencv_imgproc.so.4.13.0
 programs/limiars/app_limiars: /usr/lib/libopencv_core.so.4.13.0
 programs/limiars/app_limiars: programs/limiars/CMakeFiles/app_limiars.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_limiars"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_limiars.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_limiars"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_limiars.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 programs/limiars/CMakeFiles/app_limiars.dir/build: programs/limiars/app_limiars
 .PHONY : programs/limiars/CMakeFiles/app_limiars.dir/build
 
 programs/limiars/CMakeFiles/app_limiars.dir/clean:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && $(CMAKE_COMMAND) -P CMakeFiles/app_limiars.dir/cmake_clean.cmake
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars && $(CMAKE_COMMAND) -P CMakeFiles/app_limiars.dir/cmake_clean.cmake
 .PHONY : programs/limiars/CMakeFiles/app_limiars.dir/clean
 
 programs/limiars/CMakeFiles/app_limiars.dir/depend:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars/CMakeFiles/app_limiars.dir/DependInfo.cmake "--color=$(COLOR)" app_limiars
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/limiars/CMakeFiles/app_limiars.dir/DependInfo.cmake "--color=$(COLOR)" app_limiars
 .PHONY : programs/limiars/CMakeFiles/app_limiars.dir/depend
 

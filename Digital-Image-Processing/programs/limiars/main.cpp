@@ -1,7 +1,7 @@
 #include "limiars.h"
+#include <iostream>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
-
 using namespace std;
 using namespace cv;
 
@@ -27,11 +27,12 @@ Mat gray_scale(Mat &img) {
 int main() {
   Mat img = imread("../assets/dark_magician.webp", IMREAD_COLOR);
   Mat img_gray = gray_scale(img);
+  Mat img_limiarized = limiarization(img_gray, 122);
 
   namedWindow("DIP", WINDOW_AUTOSIZE);
   Mat screen;
 
-  vector<Mat> arr_imgs = {img, img_gray};
+  vector<Mat> arr_imgs = {img, img_gray, img_limiarized};
   hconcat(arr_imgs, screen);
 
   imshow("DIP", screen);

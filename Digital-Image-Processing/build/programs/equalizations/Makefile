@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations//CMakeFiles/progress.marks
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations//CMakeFiles/progress.marks
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/clean
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/preinstall
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/preinstall
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 programs/equalizations/CMakeFiles/app_equalizations.dir/rule:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/CMakeFiles/app_equalizations.dir/rule
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/equalizations/CMakeFiles/app_equalizations.dir/rule
 .PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ app_equalizations: programs/equalizations/CMakeFiles/app_equalizations.dir/rule
 
 # fast build rule for target.
 app_equalizations/fast:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/build
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/build
 .PHONY : app_equalizations/fast
 
 main.o: main.cpp.o
@@ -135,7 +135,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -143,7 +143,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,7 +151,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(MAKE) $(MAKESILENT) -f programs/equalizations/CMakeFiles/app_equalizations.dir/build.make programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

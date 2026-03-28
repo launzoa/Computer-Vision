@@ -7,18 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/CMakeLists.txt"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/CMakeLists.txt"
   "CMakeFiles/4.2.3/CMakeCCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeSystem.cmake"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/colors/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/limiars/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/sampling/CMakeLists.txt"
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/CMakeLists.txt"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/CMakeLists.txt"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/CMakeLists.txt"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/CMakeLists.txt"
   "/usr/lib/cmake/opencv4/OpenCVConfig-version.cmake"
   "/usr/lib/cmake/opencv4/OpenCVConfig.cmake"
   "/usr/lib/cmake/opencv4/OpenCVModules-release.cmake"
@@ -66,21 +61,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "core/CMakeFiles/CMakeDirectoryInformation.cmake"
   "programs/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "programs/colors/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "programs/sampling/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "programs/interpolations/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "programs/equalizations/CMakeFiles/CMakeDirectoryInformation.cmake"
   "programs/smoothing/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "programs/limiars/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "core/CMakeFiles/dip_core.dir/DependInfo.cmake"
-  "programs/colors/CMakeFiles/app_colors.dir/DependInfo.cmake"
-  "programs/sampling/CMakeFiles/app_sampling.dir/DependInfo.cmake"
-  "programs/interpolations/CMakeFiles/app_interpolations.dir/DependInfo.cmake"
-  "programs/equalizations/CMakeFiles/app_equalizations.dir/DependInfo.cmake"
   "programs/smoothing/CMakeFiles/app_smoothing.dir/DependInfo.cmake"
-  "programs/limiars/CMakeFiles/app_limiars.dir/DependInfo.cmake"
   )

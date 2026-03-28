@@ -6,6 +6,5 @@
 
 cv::Mat nearestNeighbor(cv::Mat &img, double scale);
 cv::Mat bilinear(cv::Mat &img, double scale);
-double cubicWeight(double x);
 cv::Mat bicubic(cv::Mat &img, double scale);
 #endif // !INTERPOLATIONS_H

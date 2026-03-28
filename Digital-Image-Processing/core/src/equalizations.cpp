@@ -10,12 +10,7 @@ vector<int> cumulative_frequency(Mat &img) {
     for (int x = 0; x < img.cols; x++) {
       Vec3b pixel = img.at<Vec3b>(y, x);
 
-      int gray = 0;
-      for (int k = 0; k < 3; k++) {
-        gray += pixel[k];
-      }
-      gray = round(gray / 3.0);
-
+      int gray = round((pixel[0] + pixel[1] + pixel[2]) / 3.0);
       hist[gray] += 1;
     }
   }
@@ -30,21 +25,16 @@ vector<int> cumulative_frequency(Mat &img) {
 }
 
 Mat equalization(Mat &img) {
-  Mat img_equalizated(img.rows, img.cols, CV_8UC3);
+  Mat img_equalizated = Mat::zeros(img.rows, img.cols, CV_8UC3);
   vector<int> cdf = cumulative_frequency(img);
-  int M = img_equalizated.rows, N = img_equalizated.cols, L = 256;
 
-  for (int y = 0; y < M; y++) {
-    for (int x = 0; x < N; x++) {
+  for (int y = 0; y < img.rows; y++) {
+    for (int x = 0; x < img.cols; x++) {
       Vec3b pixel = img.at<Vec3b>(y, x);
 
-      int gray = 0;
-      for (int i = 0; i < 3; i++) {
-        gray += pixel[i];
-      }
-      gray = round(gray / 3.0);
+      int gray = round((pixel[0] + pixel[1] + pixel[2]) / 3.0);
 
-      int val = round(((double)(L - 1) / (M * N)) * cdf[gray]);
+      int val = round(((double)255 / (img.rows * img.cols)) * cdf[gray]);
       val = min(max(val, 0), 255);
 
       img_equalizated.at<Vec3b>(y, x) = Vec3b(val, val, val);

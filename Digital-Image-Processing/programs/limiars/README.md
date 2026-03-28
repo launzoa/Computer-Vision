@@ -1,9 +1,6 @@
-Um simples programa introdutório em C++ utilizando a biblioteca OpenCV para abrir e manipular imagens. O objetivo principal é por em prática os fundamentos da manipulação direta de pixels e operações do livro de processamento digital de imagens do Gonzalez.
-
-O programa carrega uma imagem base e abre uma janela que exibe a imagem original e a versão modificada lado a lado. Através do teclado, é possível aplicar os seguintes filtros em tempo real:
-
-* **`1` - Escala de Cinza (Grayscale):** Converte a imagem colorida calculando a média aritmética dos canais BGR de cada pixel.
-* **`2` - Inversão em Tons de Cinza:** Aplica o efeito de negativo fotográfico sobre a imagem já convertida para tons de cinza.
-* **`3` - Inversão de Cores (Negativo):** Inverte os valores de cada canal de cor (RGB) subtraindo o valor atual de 255.
-* **`Espaço` - Salvar/Acumular Efeito:** Retorna para a imagem original.
-* **`ESC` - Sair:** Encerra a aplicação de forma segura.
+**Limiarização Invertida (Inverse Thresholding):** Converte a imagem para um formato binário (preto e branco) a partir de um valor de corte (limiar) predefinido. O algoritmo calcula primeiro a intensidade em tons de cinza do pixel através da média aritmética de seus canais BGR. Em seguida, aplica a seguinte função condicional (onde $f(x,y)$ é a intensidade original e $g(x,y)$ é o pixel resultante):
+$$
+g(x,y) = \begin{cases} 0 & \text{se } f(x,y) > \text{limiar} \\ 255 & \text{caso contrário} \end{cases}
+$$
+  
+Esta técnica atribui o valor preto (0) aos pixels mais claros que o limiar e branco (255) aos pixels mais escuros. É uma operação fundamental para a segmentação de imagens, permitindo isolar objetos de interesse do fundo com base na diferença de suas intensidades luminosas.

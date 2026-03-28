@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations/main.cpp" "programs/interpolations/CMakeFiles/app_interpolations.dir/main.cpp.o" "gcc" "programs/interpolations/CMakeFiles/app_interpolations.dir/main.cpp.o.d"
+  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations/main.cpp" "programs/interpolations/CMakeFiles/app_interpolations.dir/main.cpp.o" "gcc" "programs/interpolations/CMakeFiles/app_interpolations.dir/main.cpp.o.d"
   "" "programs/interpolations/app_interpolations" "gcc" "programs/interpolations/CMakeFiles/app_interpolations.dir/link.d"
   )
 

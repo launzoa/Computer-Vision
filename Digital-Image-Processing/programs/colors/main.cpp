@@ -1,13 +1,12 @@
 #include "colors.h"
-#include <iostream>
 #include <opencv2/highgui.hpp>
 
 using namespace std;
 using namespace cv;
 
-int main(int argc, char **argv) {
+int main() {
 
-  Mat img1 = imread("assets/Lena320x240.jpg");
+  Mat img1 = imread("../assets/dark_magician.webp");
   Mat img2 = img1.clone();
 
   namedWindow("DIP", WINDOW_AUTOSIZE);

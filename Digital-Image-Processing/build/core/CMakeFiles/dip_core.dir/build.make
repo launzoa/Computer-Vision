@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 # Include any dependencies generated for this target.
 include core/CMakeFiles/dip_core.dir/depend.make
@@ -73,106 +73,106 @@ core/CMakeFiles/dip_core.dir/codegen:
 .PHONY : core/CMakeFiles/dip_core.dir/codegen
 
 core/CMakeFiles/dip_core.dir/src/colors.cpp.o: core/CMakeFiles/dip_core.dir/flags.make
-core/CMakeFiles/dip_core.dir/src/colors.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp
+core/CMakeFiles/dip_core.dir/src/colors.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp
 core/CMakeFiles/dip_core.dir/src/colors.cpp.o: core/CMakeFiles/dip_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/CMakeFiles/dip_core.dir/src/colors.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/colors.cpp.o -MF CMakeFiles/dip_core.dir/src/colors.cpp.o.d -o CMakeFiles/dip_core.dir/src/colors.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/CMakeFiles/dip_core.dir/src/colors.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/colors.cpp.o -MF CMakeFiles/dip_core.dir/src/colors.cpp.o.d -o CMakeFiles/dip_core.dir/src/colors.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp
 
 core/CMakeFiles/dip_core.dir/src/colors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dip_core.dir/src/colors.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp > CMakeFiles/dip_core.dir/src/colors.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp > CMakeFiles/dip_core.dir/src/colors.cpp.i
 
 core/CMakeFiles/dip_core.dir/src/colors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dip_core.dir/src/colors.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp -o CMakeFiles/dip_core.dir/src/colors.cpp.s
-
-core/CMakeFiles/dip_core.dir/src/sampling.cpp.o: core/CMakeFiles/dip_core.dir/flags.make
-core/CMakeFiles/dip_core.dir/src/sampling.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/sampling.cpp
-core/CMakeFiles/dip_core.dir/src/sampling.cpp.o: core/CMakeFiles/dip_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/dip_core.dir/src/sampling.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/sampling.cpp.o -MF CMakeFiles/dip_core.dir/src/sampling.cpp.o.d -o CMakeFiles/dip_core.dir/src/sampling.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/sampling.cpp
-
-core/CMakeFiles/dip_core.dir/src/sampling.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dip_core.dir/src/sampling.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/sampling.cpp > CMakeFiles/dip_core.dir/src/sampling.cpp.i
-
-core/CMakeFiles/dip_core.dir/src/sampling.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dip_core.dir/src/sampling.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/sampling.cpp -o CMakeFiles/dip_core.dir/src/sampling.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp -o CMakeFiles/dip_core.dir/src/colors.cpp.s
 
 core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o: core/CMakeFiles/dip_core.dir/flags.make
-core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp
+core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp
 core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o: core/CMakeFiles/dip_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o -MF CMakeFiles/dip_core.dir/src/interpolations.cpp.o.d -o CMakeFiles/dip_core.dir/src/interpolations.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o -MF CMakeFiles/dip_core.dir/src/interpolations.cpp.o.d -o CMakeFiles/dip_core.dir/src/interpolations.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp
 
 core/CMakeFiles/dip_core.dir/src/interpolations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dip_core.dir/src/interpolations.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp > CMakeFiles/dip_core.dir/src/interpolations.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp > CMakeFiles/dip_core.dir/src/interpolations.cpp.i
 
 core/CMakeFiles/dip_core.dir/src/interpolations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dip_core.dir/src/interpolations.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp -o CMakeFiles/dip_core.dir/src/interpolations.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp -o CMakeFiles/dip_core.dir/src/interpolations.cpp.s
 
 core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o: core/CMakeFiles/dip_core.dir/flags.make
-core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp
+core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp
 core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o: core/CMakeFiles/dip_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o -MF CMakeFiles/dip_core.dir/src/equalizations.cpp.o.d -o CMakeFiles/dip_core.dir/src/equalizations.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o -MF CMakeFiles/dip_core.dir/src/equalizations.cpp.o.d -o CMakeFiles/dip_core.dir/src/equalizations.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp
 
 core/CMakeFiles/dip_core.dir/src/equalizations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dip_core.dir/src/equalizations.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp > CMakeFiles/dip_core.dir/src/equalizations.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp > CMakeFiles/dip_core.dir/src/equalizations.cpp.i
 
 core/CMakeFiles/dip_core.dir/src/equalizations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dip_core.dir/src/equalizations.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp -o CMakeFiles/dip_core.dir/src/equalizations.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp -o CMakeFiles/dip_core.dir/src/equalizations.cpp.s
 
 core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o: core/CMakeFiles/dip_core.dir/flags.make
-core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp
+core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp
 core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o: core/CMakeFiles/dip_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -MF CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o.d -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -MF CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o.d -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp
 
 core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dip_core.dir/src/spatial_filters.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp > CMakeFiles/dip_core.dir/src/spatial_filters.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp > CMakeFiles/dip_core.dir/src/spatial_filters.cpp.i
 
 core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dip_core.dir/src/spatial_filters.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.s
+
+core/CMakeFiles/dip_core.dir/src/limiars.cpp.o: core/CMakeFiles/dip_core.dir/flags.make
+core/CMakeFiles/dip_core.dir/src/limiars.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp
+core/CMakeFiles/dip_core.dir/src/limiars.cpp.o: core/CMakeFiles/dip_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object core/CMakeFiles/dip_core.dir/src/limiars.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/dip_core.dir/src/limiars.cpp.o -MF CMakeFiles/dip_core.dir/src/limiars.cpp.o.d -o CMakeFiles/dip_core.dir/src/limiars.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp
+
+core/CMakeFiles/dip_core.dir/src/limiars.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dip_core.dir/src/limiars.cpp.i"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp > CMakeFiles/dip_core.dir/src/limiars.cpp.i
+
+core/CMakeFiles/dip_core.dir/src/limiars.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dip_core.dir/src/limiars.cpp.s"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp -o CMakeFiles/dip_core.dir/src/limiars.cpp.s
 
 # Object files for target dip_core
 dip_core_OBJECTS = \
 "CMakeFiles/dip_core.dir/src/colors.cpp.o" \
-"CMakeFiles/dip_core.dir/src/sampling.cpp.o" \
 "CMakeFiles/dip_core.dir/src/interpolations.cpp.o" \
 "CMakeFiles/dip_core.dir/src/equalizations.cpp.o" \
-"CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o"
+"CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o" \
+"CMakeFiles/dip_core.dir/src/limiars.cpp.o"
 
 # External object files for target dip_core
 dip_core_EXTERNAL_OBJECTS =
 
 core/libdip_core.a: core/CMakeFiles/dip_core.dir/src/colors.cpp.o
-core/libdip_core.a: core/CMakeFiles/dip_core.dir/src/sampling.cpp.o
 core/libdip_core.a: core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o
 core/libdip_core.a: core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o
 core/libdip_core.a: core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o
+core/libdip_core.a: core/CMakeFiles/dip_core.dir/src/limiars.cpp.o
 core/libdip_core.a: core/CMakeFiles/dip_core.dir/build.make
 core/libdip_core.a: core/CMakeFiles/dip_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libdip_core.a"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && $(CMAKE_COMMAND) -P CMakeFiles/dip_core.dir/cmake_clean_target.cmake
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dip_core.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libdip_core.a"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && $(CMAKE_COMMAND) -P CMakeFiles/dip_core.dir/cmake_clean_target.cmake
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dip_core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 core/CMakeFiles/dip_core.dir/build: core/libdip_core.a
 .PHONY : core/CMakeFiles/dip_core.dir/build
 
 core/CMakeFiles/dip_core.dir/clean:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core && $(CMAKE_COMMAND) -P CMakeFiles/dip_core.dir/cmake_clean.cmake
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core && $(CMAKE_COMMAND) -P CMakeFiles/dip_core.dir/cmake_clean.cmake
 .PHONY : core/CMakeFiles/dip_core.dir/clean
 
 core/CMakeFiles/dip_core.dir/depend:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/core/CMakeFiles/dip_core.dir/DependInfo.cmake "--color=$(COLOR)" dip_core
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core/CMakeFiles/dip_core.dir/DependInfo.cmake "--color=$(COLOR)" dip_core
 .PHONY : core/CMakeFiles/dip_core.dir/depend
 

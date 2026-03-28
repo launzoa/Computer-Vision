@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing
+CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build
+CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build
 
 # Include any dependencies generated for this target.
 include programs/equalizations/CMakeFiles/app_equalizations.dir/depend.make
@@ -73,18 +73,18 @@ programs/equalizations/CMakeFiles/app_equalizations.dir/codegen:
 .PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/codegen
 
 programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o: programs/equalizations/CMakeFiles/app_equalizations.dir/flags.make
-programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o: /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp
+programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o: /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp
 programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o: programs/equalizations/CMakeFiles/app_equalizations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o -MF CMakeFiles/app_equalizations.dir/main.cpp.o.d -o CMakeFiles/app_equalizations.dir/main.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.o -MF CMakeFiles/app_equalizations.dir/main.cpp.o.d -o CMakeFiles/app_equalizations.dir/main.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp
 
 programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app_equalizations.dir/main.cpp.i"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp > CMakeFiles/app_equalizations.dir/main.cpp.i
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp > CMakeFiles/app_equalizations.dir/main.cpp.i
 
 programs/equalizations/CMakeFiles/app_equalizations.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app_equalizations.dir/main.cpp.s"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp -o CMakeFiles/app_equalizations.dir/main.cpp.s
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations/main.cpp -o CMakeFiles/app_equalizations.dir/main.cpp.s
 
 # Object files for target app_equalizations
 app_equalizations_OBJECTS = \
@@ -155,18 +155,18 @@ programs/equalizations/app_equalizations: /usr/lib/libopencv_photo.so.4.13.0
 programs/equalizations/app_equalizations: /usr/lib/libopencv_imgproc.so.4.13.0
 programs/equalizations/app_equalizations: /usr/lib/libopencv_core.so.4.13.0
 programs/equalizations/app_equalizations: programs/equalizations/CMakeFiles/app_equalizations.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_equalizations"
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_equalizations.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_equalizations"
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_equalizations.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 programs/equalizations/CMakeFiles/app_equalizations.dir/build: programs/equalizations/app_equalizations
 .PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/build
 
 programs/equalizations/CMakeFiles/app_equalizations.dir/clean:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && $(CMAKE_COMMAND) -P CMakeFiles/app_equalizations.dir/cmake_clean.cmake
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations && $(CMAKE_COMMAND) -P CMakeFiles/app_equalizations.dir/cmake_clean.cmake
 .PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/clean
 
 programs/equalizations/CMakeFiles/app_equalizations.dir/depend:
-	cd /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations/CMakeFiles/app_equalizations.dir/DependInfo.cmake "--color=$(COLOR)" app_equalizations
+	cd /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/equalizations /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/equalizations/CMakeFiles/app_equalizations.dir/DependInfo.cmake "--color=$(COLOR)" app_equalizations
 .PHONY : programs/equalizations/CMakeFiles/app_equalizations.dir/depend
 

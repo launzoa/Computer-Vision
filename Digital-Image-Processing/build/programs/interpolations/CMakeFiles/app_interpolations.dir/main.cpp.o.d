@@ -1,7 +1,7 @@
 programs/interpolations/CMakeFiles/app_interpolations.dir/main.cpp.o: \
- /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations/main.cpp \
+ /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/interpolations/main.cpp \
  /usr/include/stdc-predef.h \
- /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/core/include/interpolations.h \
+ /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include/interpolations.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
