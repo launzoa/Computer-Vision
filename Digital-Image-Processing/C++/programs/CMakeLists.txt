@@ -1,5 +1,1 @@
-# add_subdirectory(colors)
-# add_subdirectory(interpolations)
-# add_subdirectory(equalizations)
-# add_subdirectory(limiars)
-add_subdirectory(smoothing)
+

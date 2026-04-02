@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp" "core/CMakeFiles/dip_core.dir/src/colors.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/colors.cpp.o.d"
-  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp" "core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o.d"
-  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp" "core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o.d"
-  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp" "core/CMakeFiles/dip_core.dir/src/limiars.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/limiars.cpp.o.d"
-  "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp" "core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/colors.cpp" "core/CMakeFiles/dip_core.dir/src/colors.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/colors.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/equalizations.cpp" "core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/interpolations.cpp" "core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/limiars.cpp" "core/CMakeFiles/dip_core.dir/src/limiars.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/limiars.cpp.o.d"
+  "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/spatial_filters.cpp" "core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o" "gcc" "core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

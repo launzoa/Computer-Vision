@@ -1,38 +1,32 @@
 [
 {
-  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/colors.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp",
-  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/colors.cpp",
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
+  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/colors.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/colors.cpp",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/colors.cpp",
   "output": "core/CMakeFiles/dip_core.dir/src/colors.cpp.o"
 },
 {
-  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/interpolations.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp",
-  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/interpolations.cpp",
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
+  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/interpolations.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/interpolations.cpp",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/interpolations.cpp",
   "output": "core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o"
 },
 {
-  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/equalizations.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp",
-  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/equalizations.cpp",
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
+  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/equalizations.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/equalizations.cpp",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/equalizations.cpp",
   "output": "core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o"
 },
 {
-  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp",
-  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/spatial_filters.cpp",
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
+  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/spatial_filters.cpp",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/spatial_filters.cpp",
   "output": "core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o"
 },
 {
-  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/limiars.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp",
-  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/src/limiars.cpp",
+  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
+  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/limiars.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/limiars.cpp",
+  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/limiars.cpp",
   "output": "core/CMakeFiles/dip_core.dir/src/limiars.cpp.o"
-},
-{
-  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/build/programs/smoothing",
-  "command": "/usr/bin/c++  -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/app_smoothing.dir/main.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp",
-  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/programs/smoothing/main.cpp",
-  "output": "programs/smoothing/CMakeFiles/app_smoothing.dir/main.cpp.o"
 }
 ]
