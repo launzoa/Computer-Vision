@@ -1,5 +1,5 @@
 set(CORE_SOURCES
-    src/colors.cpp
+    src/intensity_transformations.cpp
     src/interpolations.cpp
     src/equalizations.cpp
     src/spatial_filters.cpp

@@ -9,6 +9,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 find_package(OpenCV REQUIRED)
 
 add_subdirectory(core)
-
 add_subdirectory(programs)
 

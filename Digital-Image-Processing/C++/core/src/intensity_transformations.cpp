@@ -1,10 +1,11 @@
-#include "colors.h"
+#include "intensity_trasnformations.h"
 #include <iostream>
 
 using namespace std;
 using namespace cv;
 
-void grayColor(Mat &img) {
+void grayScale(Mat &img) {
+
   for (int y = 0; y < img.rows; y++) {
     for (int x = 0; x < img.cols; x++) {
       Vec3b &pixel = img.at<Vec3b>(y, x);
