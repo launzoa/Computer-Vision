@@ -163,24 +163,3 @@ def convertHSLtoRGB(image_original):
             image[y, x] = [np.clip(B, 0, 255), np.clip(G, 0, 255), np.clip(R, 0, 255)]
 
     return image
-
-
-def a(image_original):
-    M, N, C = image_original.shape
-    image = np.zeros((M, N, C), np.uint8)
-
-    for y in range(M):
-        for x in range(N):
-            pass
-
-    return image
-
-
-def b(image_original):
-    M, N, C = image_original.shape
-    image = np.zeros((M, N, C), np.uint8)
-
-    for y in range(M):
-        for x in range(N):
-            pass
-    return image
