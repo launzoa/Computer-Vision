@@ -1,9 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/cmake_install.cmake",
-		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core/cmake_install.cmake",
-		"/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/programs/cmake_install.cmake"
+		"/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

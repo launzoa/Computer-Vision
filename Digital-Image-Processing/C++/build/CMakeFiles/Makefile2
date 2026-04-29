@@ -54,103 +54,128 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++
+CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build
+CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: core/all
-all: programs/all
+all: CMakeFiles/ImageFiltering.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: core/codegen
-codegen: programs/codegen
+codegen: CMakeFiles/ImageFiltering.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: core/preinstall
-preinstall: programs/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: core/clean
-clean: programs/clean
+clean: CMakeFiles/ImageFiltering.dir/clean
+clean: CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/ImageFiltering_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory core
-
-# Recursive "all" directory target.
-core/all: core/CMakeFiles/dip_core.dir/all
-.PHONY : core/all
-
-# Recursive "codegen" directory target.
-core/codegen: core/CMakeFiles/dip_core.dir/codegen
-.PHONY : core/codegen
-
-# Recursive "preinstall" directory target.
-core/preinstall:
-.PHONY : core/preinstall
-
-# Recursive "clean" directory target.
-core/clean: core/CMakeFiles/dip_core.dir/clean
-.PHONY : core/clean
-
-#=============================================================================
-# Directory level rules for directory programs
-
-# Recursive "all" directory target.
-programs/all:
-.PHONY : programs/all
-
-# Recursive "codegen" directory target.
-programs/codegen:
-.PHONY : programs/codegen
-
-# Recursive "preinstall" directory target.
-programs/preinstall:
-.PHONY : programs/preinstall
-
-# Recursive "clean" directory target.
-programs/clean:
-.PHONY : programs/clean
-
-#=============================================================================
-# Target rules for target core/CMakeFiles/dip_core.dir
+# Target rules for target CMakeFiles/ImageFiltering.dir
 
 # All Build rule for target.
-core/CMakeFiles/dip_core.dir/all:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/depend
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target dip_core"
-.PHONY : core/CMakeFiles/dip_core.dir/all
+CMakeFiles/ImageFiltering.dir/all: CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all
+CMakeFiles/ImageFiltering.dir/all: CMakeFiles/ImageFiltering_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ImageFiltering"
+.PHONY : CMakeFiles/ImageFiltering.dir/all
 
 # Build rule for subdir invocation for target.
-core/CMakeFiles/dip_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/dip_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
-.PHONY : core/CMakeFiles/dip_core.dir/rule
+CMakeFiles/ImageFiltering.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ImageFiltering.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
+.PHONY : CMakeFiles/ImageFiltering.dir/rule
 
 # Convenience name for target.
-dip_core: core/CMakeFiles/dip_core.dir/rule
-.PHONY : dip_core
+ImageFiltering: CMakeFiles/ImageFiltering.dir/rule
+.PHONY : ImageFiltering
 
 # codegen rule for target.
-core/CMakeFiles/dip_core.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target dip_core"
-.PHONY : core/CMakeFiles/dip_core.dir/codegen
+CMakeFiles/ImageFiltering.dir/codegen: CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target ImageFiltering"
+.PHONY : CMakeFiles/ImageFiltering.dir/codegen
 
 # clean rule for target.
-core/CMakeFiles/dip_core.dir/clean:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/clean
-.PHONY : core/CMakeFiles/dip_core.dir/clean
+CMakeFiles/ImageFiltering.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/clean
+.PHONY : CMakeFiles/ImageFiltering.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build.make CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build.make CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num= "Built target ImageFiltering_autogen_timestamp_deps"
+.PHONY : CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
+.PHONY : CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+ImageFiltering_autogen_timestamp_deps: CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/rule
+.PHONY : ImageFiltering_autogen_timestamp_deps
+
+# codegen rule for target.
+CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build.make CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num= "Finished codegen for target ImageFiltering_autogen_timestamp_deps"
+.PHONY : CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build.make CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ImageFiltering_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/ImageFiltering_autogen.dir/all: CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen.dir/build.make CMakeFiles/ImageFiltering_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen.dir/build.make CMakeFiles/ImageFiltering_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num=7 "Built target ImageFiltering_autogen"
+.PHONY : CMakeFiles/ImageFiltering_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ImageFiltering_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ImageFiltering_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
+.PHONY : CMakeFiles/ImageFiltering_autogen.dir/rule
+
+# Convenience name for target.
+ImageFiltering_autogen: CMakeFiles/ImageFiltering_autogen.dir/rule
+.PHONY : ImageFiltering_autogen
+
+# codegen rule for target.
+CMakeFiles/ImageFiltering_autogen.dir/codegen: CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen.dir/build.make CMakeFiles/ImageFiltering_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles --progress-num=7 "Finished codegen for target ImageFiltering_autogen"
+.PHONY : CMakeFiles/ImageFiltering_autogen.dir/codegen
+
+# clean rule for target.
+CMakeFiles/ImageFiltering_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen.dir/build.make CMakeFiles/ImageFiltering_autogen.dir/clean
+.PHONY : CMakeFiles/ImageFiltering_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

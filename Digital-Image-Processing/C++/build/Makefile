@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++
+CMAKE_SOURCE_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build
+CMAKE_BINARY_DIR = /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,17 +117,139 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dip_core
+# Target rules for targets named ImageFiltering
 
 # Build rule for target.
-dip_core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dip_core
-.PHONY : dip_core
+ImageFiltering: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ImageFiltering
+.PHONY : ImageFiltering
 
 # fast build rule for target.
-dip_core/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/dip_core.dir/build.make core/CMakeFiles/dip_core.dir/build
-.PHONY : dip_core/fast
+ImageFiltering/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/build
+.PHONY : ImageFiltering/fast
+
+#=============================================================================
+# Target rules for targets named ImageFiltering_autogen_timestamp_deps
+
+# Build rule for target.
+ImageFiltering_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ImageFiltering_autogen_timestamp_deps
+.PHONY : ImageFiltering_autogen_timestamp_deps
+
+# fast build rule for target.
+ImageFiltering_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build.make CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir/build
+.PHONY : ImageFiltering_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named ImageFiltering_autogen
+
+# Build rule for target.
+ImageFiltering_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ImageFiltering_autogen
+.PHONY : ImageFiltering_autogen
+
+# fast build rule for target.
+ImageFiltering_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering_autogen.dir/build.make CMakeFiles/ImageFiltering_autogen.dir/build
+.PHONY : ImageFiltering_autogen/fast
+
+ImageFiltering_autogen/mocs_compilation.o: ImageFiltering_autogen/mocs_compilation.cpp.o
+.PHONY : ImageFiltering_autogen/mocs_compilation.o
+
+# target to build an object file
+ImageFiltering_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/ImageFiltering_autogen/mocs_compilation.cpp.o
+.PHONY : ImageFiltering_autogen/mocs_compilation.cpp.o
+
+ImageFiltering_autogen/mocs_compilation.i: ImageFiltering_autogen/mocs_compilation.cpp.i
+.PHONY : ImageFiltering_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+ImageFiltering_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/ImageFiltering_autogen/mocs_compilation.cpp.i
+.PHONY : ImageFiltering_autogen/mocs_compilation.cpp.i
+
+ImageFiltering_autogen/mocs_compilation.s: ImageFiltering_autogen/mocs_compilation.cpp.s
+.PHONY : ImageFiltering_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+ImageFiltering_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/ImageFiltering_autogen/mocs_compilation.cpp.s
+.PHONY : ImageFiltering_autogen/mocs_compilation.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
+src/operations.o: src/operations.cpp.o
+.PHONY : src/operations.o
+
+# target to build an object file
+src/operations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/src/operations.cpp.o
+.PHONY : src/operations.cpp.o
+
+src/operations.i: src/operations.cpp.i
+.PHONY : src/operations.i
+
+# target to preprocess a source file
+src/operations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/src/operations.cpp.i
+.PHONY : src/operations.cpp.i
+
+src/operations.s: src/operations.cpp.s
+.PHONY : src/operations.s
+
+# target to generate assembly for a file
+src/operations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageFiltering.dir/build.make CMakeFiles/ImageFiltering.dir/src/operations.cpp.s
+.PHONY : src/operations.cpp.s
 
 # Help Target
 help:
@@ -137,7 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... dip_core"
+	@echo "... ImageFiltering_autogen"
+	@echo "... ImageFiltering_autogen_timestamp_deps"
+	@echo "... ImageFiltering"
+	@echo "... ImageFiltering_autogen/mocs_compilation.o"
+	@echo "... ImageFiltering_autogen/mocs_compilation.i"
+	@echo "... ImageFiltering_autogen/mocs_compilation.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... src/operations.o"
+	@echo "... src/operations.i"
+	@echo "... src/operations.s"
 .PHONY : help
 
 

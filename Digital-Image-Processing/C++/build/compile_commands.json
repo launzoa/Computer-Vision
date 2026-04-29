@@ -1,32 +1,26 @@
 [
 {
-  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/colors.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/colors.cpp",
-  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/colors.cpp",
-  "output": "core/CMakeFiles/dip_core.dir/src/colors.cpp.o"
+  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++ -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/ImageFiltering_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/opencv4 -std=gnu++17 -mno-direct-extern-access -o CMakeFiles/ImageFiltering.dir/ImageFiltering_autogen/mocs_compilation.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/ImageFiltering_autogen/mocs_compilation.cpp",
+  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/ImageFiltering_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/ImageFiltering.dir/ImageFiltering_autogen/mocs_compilation.cpp.o"
 },
 {
-  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/interpolations.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/interpolations.cpp",
-  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/interpolations.cpp",
-  "output": "core/CMakeFiles/dip_core.dir/src/interpolations.cpp.o"
+  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++ -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/ImageFiltering_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/opencv4 -std=gnu++17 -mno-direct-extern-access -o CMakeFiles/ImageFiltering.dir/main.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/main.cpp",
+  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/main.cpp",
+  "output": "CMakeFiles/ImageFiltering.dir/main.cpp.o"
 },
 {
-  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/equalizations.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/equalizations.cpp",
-  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/equalizations.cpp",
-  "output": "core/CMakeFiles/dip_core.dir/src/equalizations.cpp.o"
+  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++ -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/ImageFiltering_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/opencv4 -std=gnu++17 -mno-direct-extern-access -o CMakeFiles/ImageFiltering.dir/mainwindow.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/mainwindow.cpp",
+  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/mainwindow.cpp",
+  "output": "CMakeFiles/ImageFiltering.dir/mainwindow.cpp.o"
 },
 {
-  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/spatial_filters.cpp",
-  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/spatial_filters.cpp",
-  "output": "core/CMakeFiles/dip_core.dir/src/spatial_filters.cpp.o"
-},
-{
-  "directory": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core",
-  "command": "/usr/bin/c++  -I/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/include -isystem /usr/include/opencv4 -std=gnu++17 -o CMakeFiles/dip_core.dir/src/limiars.cpp.o -c /home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/limiars.cpp",
-  "file": "/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/core/src/limiars.cpp",
-  "output": "core/CMakeFiles/dip_core.dir/src/limiars.cpp.o"
+  "directory": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++ -I/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/ImageFiltering_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/opencv4 -std=gnu++17 -mno-direct-extern-access -o CMakeFiles/ImageFiltering.dir/src/operations.cpp.o -c /home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/src/operations.cpp",
+  "file": "/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/src/operations.cpp",
+  "output": "CMakeFiles/ImageFiltering.dir/src/operations.cpp.o"
 }
 ]

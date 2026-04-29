@@ -1,7 +1,5 @@
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/edit_cache.dir
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/rebuild_cache.dir
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core/CMakeFiles/dip_core.dir
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core/CMakeFiles/edit_cache.dir
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/core/CMakeFiles/rebuild_cache.dir
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/programs/CMakeFiles/edit_cache.dir
-/home/launzoa/Documents/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/programs/CMakeFiles/rebuild_cache.dir
+/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/ImageFiltering.dir
+/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/edit_cache.dir
+/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/rebuild_cache.dir
+/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/ImageFiltering_autogen_timestamp_deps.dir
+/home/launzoa/GitHub/Computer-Vision/Digital-Image-Processing/C++/build/CMakeFiles/ImageFiltering_autogen.dir
