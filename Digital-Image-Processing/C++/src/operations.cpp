@@ -85,7 +85,8 @@ Mat gray_scale(const Mat &img) {
 Mat power_gamma(const Mat &img, const int c, const int gamma) {
   Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
 
-  return out;
+  for (int y = 0; y <)
+    return out;
 }
 
 Mat binarization(const Mat &img, const int threshold) {
