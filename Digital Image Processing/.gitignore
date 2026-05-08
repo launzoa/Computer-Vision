@@ -1,0 +1,15 @@
+build/
+build*/
+
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+.qtcreator/
+
+.cache/
+CMakeCache.txt
+CMakeFiles/
+
+*.o
+*.a
+*.so
+*.wasm
