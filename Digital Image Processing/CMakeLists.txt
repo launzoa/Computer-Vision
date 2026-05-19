@@ -29,6 +29,7 @@ qt_add_executable(DIP
     mainwindow.h
     src/operations.cpp
     src/operations.h
+    resources.qrc
 )
 
 target_link_libraries(DIP PRIVATE

@@ -8,6 +8,7 @@
 #include <QPixmap>
 #include <QStatusBar>
 #include <QVBoxLayout>
+#include <QFile>
 
 using namespace cv;
 
@@ -306,7 +307,7 @@ void MainWindow::onApplyClicked() {
 
   else if (op == "Gamma Correction")
     matProcessed = DIP::color::power_gamma(matCurrent, spinGammaC->value(),
-                                               spinGamma->value());
+                                           spinGamma->value());
 
   else if (op == "RGB to HSV")
     matProcessed = DIP::color::rgb_to_hsv(matCurrent);
@@ -388,25 +389,30 @@ void MainWindow::onResetClicked() {
 }
 
 void MainWindow::onOpenClicked() {
-  const QString path = QFileDialog::getOpenFileName(
-      this, "Open Image", "",
-      "Images (*.png *.jpg *.jpeg *.bmp *.tiff);;All Files (*)");
-  if (path.isEmpty())
-    return;
+  auto fileDialogCallback = [this](const QString &fileName,
+                                   const QByteArray &fileContent) {
+    if (fileName.isEmpty() || fileContent.isEmpty())
+      return;
 
-  Mat img = cv::imread(path.toStdString());
-  if (img.empty()) {
-    statusBar()->showMessage("Error: could not read " + path);
-    return;
-  }
+    std::vector<uchar> buf(fileContent.begin(), fileContent.end());
+    Mat img = cv::imdecode(buf, cv::IMREAD_COLOR);
+    if (img.empty()) {
+      statusBar()->showMessage("Error: could not decode " + fileName);
+      return;
+    }
 
-  matOriginal = img;
-  matCurrent = img.clone();
-  matProcessed = Mat();
+    matOriginal = img;
+    matCurrent = img.clone();
+    matProcessed = Mat();
 
-  lblResult->clear();
-  statusBar()->showMessage("Loaded: " + path);
-  updatePreview();
+    lblResult->clear();
+    statusBar()->showMessage("Loaded: " + fileName);
+    updatePreview();
+  };
+
+  QFileDialog::getOpenFileContent(
+      "Images (*.png *.jpg *.jpeg *.bmp *.tiff);;All Files (*)",
+      fileDialogCallback);
 }
 
 void MainWindow::applyStyles() {
@@ -426,7 +432,13 @@ void MainWindow::applyStyles() {
 }
 
 void MainWindow::loadDefaultImage() {
-  matOriginal = cv::imread("../assets/placeholder.jpg");
+  QFile file(":/assets/Lena320x240.jpg");
+  if (file.open(QIODevice::ReadOnly)) {
+    QByteArray fileContent = file.readAll();
+    std::vector<uchar> buf(fileContent.begin(), fileContent.end());
+    matOriginal = cv::imdecode(buf, cv::IMREAD_COLOR);
+  }
+
   if (matOriginal.empty()) {
     matOriginal = Mat(400, 400, CV_8UC3);
     for (int y = 0; y < matOriginal.rows; ++y)
