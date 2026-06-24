@@ -41,7 +41,20 @@ static QString operationDescription(const QString &op) {
       {"Sobel Edge Detection",
        "Detects horizontal and vertical edges using directional gradients."},
       {"Laplacian", "Detects areas of rapid intensity change using a "
-                    "second-derivative kernel."}};
+                    "second-derivative kernel."},
+      {"Dilation", "Expands white regions in a binary image using max filter."},
+      {"Erosion", "Shrinks white regions in a binary image using min filter."},
+      {"Otsu Binarization", "Binarizes image using optimal Otsu thresholding."},
+      {"Pseudo Coloring", "Applies a Jet-like colormap to a grayscale image."},
+      {"Equalize HSL", "Equalizes only the L channel of the HSL color model."},
+      {"Min Filter", "Replaces pixel with minimum value in the neighborhood."},
+      {"Max Filter", "Replaces pixel with maximum value in the neighborhood."},
+      {"Midpoint Filter", "Replaces pixel with (min+max)/2 in the neighborhood."},
+      {"DCT Forward", "Computes the 2D DCT of a 128x128 representation."},
+      {"DCT Inverse", "Computes the 2D IDCT from the stored DCT matrix."},
+      {"DCT Low-Pass", "Applies an ideal low-pass filter in the frequency domain."},
+      {"DCT High-Pass", "Applies an ideal high-pass filter in the frequency domain."},
+      {"DCT Add Noise", "Adds a specific frequency noise to the DCT matrix."}};
   return descriptions.value(op, QString());
 }
 
@@ -70,10 +83,13 @@ void MainWindow::setupUI() {
   comboOperations->setFixedHeight(34);
   comboOperations->addItems(
       {"Gray Scale", "Binarization", "Limiarization", "Gamma Correction",
-       "RGB to HSV", "HSV to RGB", // NOVO: Adicionado HSV to RGB
+       "RGB to HSV", "HSV to RGB",
        "Mean (pixel-wise)", "Median (pixel-wise)", "Nearest Neighbor",
        "Bilinear", "Histogram Equalization", "Mean Convolution",
-       "Sobel Edge Detection", "Laplacian"});
+       "Sobel Edge Detection", "Laplacian", "Dilation", "Erosion",
+       "Otsu Binarization", "Pseudo Coloring", "Equalize HSL",
+       "Min Filter", "Max Filter", "Midpoint Filter",
+       "DCT Forward", "DCT Inverse", "DCT Low-Pass", "DCT High-Pass", "DCT Add Noise"});
 
   btnApply = new QPushButton("▶  Apply");
   btnApply->setFixedHeight(34);
@@ -140,6 +156,31 @@ void MainWindow::setupUI() {
   spinGamma->setValue(2.2);
   spinGamma->setFixedWidth(76);
 
+  // --- Frequency Domain Parameters ---
+  lblCutoffHint = new QLabel("Cutoff Freq:");
+  spinCutoff = new QSpinBox();
+  spinCutoff->setRange(1, 128);
+  spinCutoff->setValue(64);
+  spinCutoff->setFixedWidth(60);
+
+  lblNoiseUHint = new QLabel("Noise U:");
+  spinNoiseU = new QSpinBox();
+  spinNoiseU->setRange(0, 127);
+  spinNoiseU->setValue(64);
+  spinNoiseU->setFixedWidth(50);
+
+  lblNoiseVHint = new QLabel("Noise V:");
+  spinNoiseV = new QSpinBox();
+  spinNoiseV->setRange(0, 127);
+  spinNoiseV->setValue(64);
+  spinNoiseV->setFixedWidth(50);
+
+  lblNoiseMagHint = new QLabel("Magnitude:");
+  spinNoiseMag = new QDoubleSpinBox();
+  spinNoiseMag->setRange(0.0, 1000000.0);
+  spinNoiseMag->setValue(10000.0);
+  spinNoiseMag->setFixedWidth(90);
+
   paramLayout->addWidget(lblScaleHint);
   paramLayout->addWidget(spinScale);
   paramLayout->addWidget(lblKernelHint);
@@ -152,6 +193,16 @@ void MainWindow::setupUI() {
   paramLayout->addWidget(spinGammaC);
   paramLayout->addWidget(lblGammaHint);
   paramLayout->addWidget(spinGamma);
+
+  paramLayout->addWidget(lblCutoffHint);
+  paramLayout->addWidget(spinCutoff);
+  paramLayout->addWidget(lblNoiseUHint);
+  paramLayout->addWidget(spinNoiseU);
+  paramLayout->addWidget(lblNoiseVHint);
+  paramLayout->addWidget(spinNoiseV);
+  paramLayout->addWidget(lblNoiseMagHint);
+  paramLayout->addWidget(spinNoiseMag);
+
   paramLayout->addStretch();
 
   // ── Hover Panel ───────────────────────────────────────────────────────
@@ -333,6 +384,53 @@ void MainWindow::onApplyClicked() {
     matProcessed = DIP::spatial::sobel(matCurrent);
   else if (op == "Laplacian")
     matProcessed = DIP::spatial::laplacian(matCurrent);
+  else if (op == "Dilation")
+    matProcessed = DIP::morphology::dilation(matCurrent, spinKernel->value());
+  else if (op == "Erosion")
+    matProcessed = DIP::morphology::erosion(matCurrent, spinKernel->value());
+  else if (op == "Otsu Binarization")
+    matProcessed = DIP::color::otsu_thresholding(matCurrent);
+  else if (op == "Pseudo Coloring")
+    matProcessed = DIP::color::pseudo_color(matCurrent);
+  else if (op == "Equalize HSL")
+    matProcessed = DIP::color::equalize_hsl(matCurrent);
+  else if (op == "Min Filter")
+    matProcessed = DIP::spatial::min_filter(matCurrent, spinKernel->value());
+  else if (op == "Max Filter")
+    matProcessed = DIP::spatial::max_filter(matCurrent, spinKernel->value());
+  else if (op == "Midpoint Filter")
+    matProcessed = DIP::spatial::midpoint_filter(matCurrent, spinKernel->value());
+  else if (op == "DCT Forward") {
+    matDCT = DIP::frequency::dct_2d(matCurrent);
+    Mat visual(matDCT.rows, matDCT.cols, CV_8UC3);
+    for(int y=0; y<matDCT.rows; ++y) {
+      for(int x=0; x<matDCT.cols; ++x) {
+        double val = matDCT.at<double>(y, x);
+        int log_val = std::clamp(static_cast<int>(20.0 * log10(1.0 + abs(val))), 0, 255);
+        visual.at<Vec3b>(y, x) = Vec3b(log_val, log_val, log_val);
+      }
+    }
+    matProcessed = visual;
+  }
+  else if (op == "DCT Inverse") {
+    if(!matDCT.empty()) matProcessed = DIP::frequency::idct_2d(matDCT);
+    else matProcessed = matCurrent.clone();
+  }
+  else if (op == "DCT Low-Pass") {
+    matDCT = DIP::frequency::dct_2d(matCurrent);
+    Mat filtered = DIP::frequency::low_pass_filter(matDCT, spinCutoff->value());
+    matProcessed = DIP::frequency::idct_2d(filtered);
+  }
+  else if (op == "DCT High-Pass") {
+    matDCT = DIP::frequency::dct_2d(matCurrent);
+    Mat filtered = DIP::frequency::high_pass_filter(matDCT, spinCutoff->value());
+    matProcessed = DIP::frequency::idct_2d(filtered);
+  }
+  else if (op == "DCT Add Noise") {
+    matDCT = DIP::frequency::dct_2d(matCurrent);
+    Mat noisy = DIP::frequency::add_frequency_noise(matDCT, spinNoiseU->value(), spinNoiseV->value(), spinNoiseMag->value());
+    matProcessed = DIP::frequency::idct_2d(noisy);
+  }
 
   showImage(lblResult, matProcessed);
   btnApply->setEnabled(true);
@@ -356,9 +454,11 @@ void MainWindow::onOperationChanged(const QString &operation) {
 void MainWindow::updateParamPanel(const QString &operation) {
   const bool needsScale =
       (operation == "Nearest Neighbor" || operation == "Bilinear");
-  const bool needsKernel = (operation == "Mean Convolution");
+  const bool needsKernel = (operation == "Mean Convolution" || operation == "Dilation" || operation == "Erosion" || operation == "Min Filter" || operation == "Max Filter" || operation == "Midpoint Filter");
   const bool needsThreshold = (operation == "Limiarization");
   const bool needsGamma = (operation == "Gamma Correction");
+  const bool needsCutoff = (operation == "DCT Low-Pass" || operation == "DCT High-Pass");
+  const bool needsNoise = (operation == "DCT Add Noise");
 
   lblScaleHint->setVisible(needsScale);
   spinScale->setVisible(needsScale);
@@ -367,14 +467,23 @@ void MainWindow::updateParamPanel(const QString &operation) {
   lblThresholdHint->setVisible(needsThreshold);
   spinThreshold->setVisible(needsThreshold);
 
-  // NOVO: Esconde/Mostra os dois controles do Gamma simultaneamente
   lblGammaCHint->setVisible(needsGamma);
   spinGammaC->setVisible(needsGamma);
   lblGammaHint->setVisible(needsGamma);
   spinGamma->setVisible(needsGamma);
 
+  lblCutoffHint->setVisible(needsCutoff);
+  spinCutoff->setVisible(needsCutoff);
+  
+  lblNoiseUHint->setVisible(needsNoise);
+  spinNoiseU->setVisible(needsNoise);
+  lblNoiseVHint->setVisible(needsNoise);
+  spinNoiseV->setVisible(needsNoise);
+  lblNoiseMagHint->setVisible(needsNoise);
+  spinNoiseMag->setVisible(needsNoise);
+
   groupParams->setVisible(needsScale || needsKernel || needsThreshold ||
-                          needsGamma);
+                          needsGamma || needsCutoff || needsNoise);
 }
 
 void MainWindow::onResetClicked() {

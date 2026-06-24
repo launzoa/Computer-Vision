@@ -57,6 +57,19 @@ private:
   QLabel *lblGammaHint;
   QDoubleSpinBox *spinGamma;
 
+  // --- Frequency Domain Parameters ---
+  QLabel *lblCutoffHint;
+  QSpinBox *spinCutoff;
+
+  QLabel *lblNoiseUHint;
+  QSpinBox *spinNoiseU;
+
+  QLabel *lblNoiseVHint;
+  QSpinBox *spinNoiseV;
+
+  QLabel *lblNoiseMagHint;
+  QDoubleSpinBox *spinNoiseMag;
+
   // ── Hover Info Panel ──────────────────────────────────────────────────
   QGroupBox *groupPixelInfo;
   QLineEdit *txtPos;
@@ -73,6 +86,7 @@ private:
   cv::Mat matCurrent;
   cv::Mat matPreview;
   cv::Mat matProcessed;
+  cv::Mat matDCT;
 
   // ── Private helpers ───────────────────────────────────────────────────
   void setupUI();

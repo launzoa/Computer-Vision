@@ -135,6 +135,65 @@ Mat binarization(const Mat &img) {
   return out;
 }
 
+Mat otsu_thresholding(const Mat &img) {
+  Mat gray = gray_scale(img);
+  vector<int> hist(256, 0);
+  int total_pixels = img.rows * img.cols;
+  for (int y = 0; y < gray.rows; ++y) {
+    for (int x = 0; x < gray.cols; ++x) {
+      hist[gray.at<Vec3b>(y, x)[0]]++;
+    }
+  }
+
+  double sum = 0;
+  for (int i = 0; i < 256; ++i) sum += i * hist[i];
+
+  double sumB = 0;
+  int wB = 0;
+  int wF = 0;
+  double varMax = 0;
+  int threshold = 0;
+
+  for (int i = 0; i < 256; ++i) {
+    wB += hist[i];
+    if (wB == 0) continue;
+    wF = total_pixels - wB;
+    if (wF == 0) break;
+
+    sumB += (double)(i * hist[i]);
+
+    double mB = sumB / wB;
+    double mF = (sum - sumB) / wF;
+
+    double varBetween = (double)wB * (double)wF * (mB - mF) * (mB - mF);
+
+    if (varBetween > varMax) {
+      varMax = varBetween;
+      threshold = i;
+    }
+  }
+
+  return limiarization(img, threshold);
+}
+
+Mat pseudo_color(const Mat &img) {
+  Mat gray = gray_scale(img);
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  for(int y=0; y<img.rows; ++y) {
+    for(int x=0; x<img.cols; ++x) {
+      int v = gray.at<Vec3b>(y, x)[0];
+      double r = 0, g = 0, b = 0;
+      if (v < 32) { r = 0; g = 0; b = 0.5 + (v/32.0)*0.5; }
+      else if (v < 96) { r = 0; g = (v-32)/64.0; b = 1; }
+      else if (v < 160) { r = (v-96)/64.0; g = 1; b = 1 - (v-96)/64.0; }
+      else if (v < 224) { r = 1; g = 1 - (v-160)/64.0; b = 0; }
+      else { r = 1 - ((v-224)/32.0)*0.5; g = 0; b = 0; }
+      out.at<Vec3b>(y, x) = Vec3b(b*255, g*255, r*255);
+    }
+  }
+  return out;
+}
+
 Mat rgb_to_hsv(const Mat &img) {
   Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
   for (int y = 0; y < img.rows; ++y) {
@@ -229,6 +288,88 @@ Mat hsv_to_rgb(const Mat &img) {
   }
 
   return out;
+}
+
+Mat rgb_to_hsl(const Mat &img) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  for (int y = 0; y < img.rows; ++y) {
+    for (int x = 0; x < img.cols; ++x) {
+      Vec3b bgr = img.at<Vec3b>(y, x);
+      double b = bgr[0] / 255.0;
+      double g = bgr[1] / 255.0;
+      double r = bgr[2] / 255.0;
+      double cmax = std::max({r, g, b});
+      double cmin = std::min({r, g, b});
+      double delta = cmax - cmin;
+      double h = 0.0, s = 0.0, l = (cmax + cmin) / 2.0;
+
+      if (delta > 0.0) {
+        s = delta / (1.0 - std::abs(2.0 * l - 1.0));
+        if (cmax == r) h = 60.0 * fmod(((g - b) / delta), 6.0);
+        else if (cmax == g) h = 60.0 * (((b - r) / delta) + 2.0);
+        else if (cmax == b) h = 60.0 * (((r - g) / delta) + 4.0);
+        if (h < 0.0) h += 360.0;
+      }
+      h = round(h / 2.0);
+      s = round(s * 255.0);
+      l = round(l * 255.0);
+      out.at<Vec3b>(y, x) = Vec3b(h, s, l);
+    }
+  }
+  return out;
+}
+
+Mat hsl_to_rgb(const Mat &img) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  for (int y = 0; y < img.rows; ++y) {
+    for (int x = 0; x < img.cols; ++x) {
+      Vec3b hsl = img.at<Vec3b>(y, x);
+      double h = hsl[0] * 2.0;
+      double s = hsl[1] / 255.0;
+      double l = hsl[2] / 255.0;
+      double c = (1.0 - std::abs(2.0 * l - 1.0)) * s;
+      double xx = c * (1.0 - std::abs(fmod(h / 60.0, 2.0) - 1.0));
+      double m = l - c / 2.0;
+      double r = 0, g = 0, b = 0;
+      if (h >= 0 && h < 60) { r = c; g = xx; b = 0; }
+      else if (h >= 60 && h < 120) { r = xx; g = c; b = 0; }
+      else if (h >= 120 && h < 180) { r = 0; g = c; b = xx; }
+      else if (h >= 180 && h < 240) { r = 0; g = xx; b = c; }
+      else if (h >= 240 && h < 300) { r = xx; g = 0; b = c; }
+      else if (h >= 300 && h < 360) { r = c; g = 0; b = xx; }
+      b = min(255, max(0, (int)round((b + m) * 255.0)));
+      g = min(255, max(0, (int)round((g + m) * 255.0)));
+      r = min(255, max(0, (int)round((r + m) * 255.0)));
+      out.at<Vec3b>(y, x) = Vec3b(b, g, r);
+    }
+  }
+  return out;
+}
+
+Mat equalize_hsl(const Mat &img) {
+  Mat hsl = rgb_to_hsl(img);
+  vector<int> hist(256, 0);
+  for (int y = 0; y < hsl.rows; ++y) {
+    for (int x = 0; x < hsl.cols; ++x) {
+      hist[hsl.at<Vec3b>(y, x)[2]]++;
+    }
+  }
+  vector<int> cdf(256, 0);
+  cdf[0] = hist[0];
+  for (int i = 1; i < 256; ++i) cdf[i] = cdf[i - 1] + hist[i];
+  int cdf_min = 0;
+  for (int i = 0; i < 256; ++i) { if (cdf[i] > 0) { cdf_min = cdf[i]; break; } }
+  double denom = static_cast<double>(hsl.rows * hsl.cols) - cdf_min;
+  
+  Mat out_hsl = hsl.clone();
+  for (int y = 0; y < out_hsl.rows; ++y) {
+    for (int x = 0; x < out_hsl.cols; ++x) {
+      int l = out_hsl.at<Vec3b>(y, x)[2];
+      uchar mapped = (denom > 0) ? static_cast<uchar>(clamp(static_cast<int>(round((cdf[l] - cdf_min) / denom * 255.0)), 0, 255)) : 0;
+      out_hsl.at<Vec3b>(y, x)[2] = mapped;
+    }
+  }
+  return hsl_to_rgb(out_hsl);
 }
 } // namespace color
 
@@ -379,6 +520,68 @@ Mat mean_convolution(const Mat &img, int kernel_size) {
   }
   return out;
 }
+
+Mat min_filter(const Mat &img, int kernel_size) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  const int offset = kernel_size / 2;
+  for (int y = offset; y < img.rows - offset; ++y) {
+    for (int x = offset; x < img.cols - offset; ++x) {
+      int min_val[3] = {255, 255, 255};
+      for (int ky = -offset; ky <= offset; ++ky) {
+        for (int kx = -offset; kx <= offset; ++kx) {
+          Vec3b p = img.at<Vec3b>(y + ky, x + kx);
+          for (int c = 0; c < 3; ++c) {
+            if (p[c] < min_val[c]) min_val[c] = p[c];
+          }
+        }
+      }
+      out.at<Vec3b>(y, x) = Vec3b(min_val[0], min_val[1], min_val[2]);
+    }
+  }
+  return out;
+}
+
+Mat max_filter(const Mat &img, int kernel_size) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  const int offset = kernel_size / 2;
+  for (int y = offset; y < img.rows - offset; ++y) {
+    for (int x = offset; x < img.cols - offset; ++x) {
+      int max_val[3] = {0, 0, 0};
+      for (int ky = -offset; ky <= offset; ++ky) {
+        for (int kx = -offset; kx <= offset; ++kx) {
+          Vec3b p = img.at<Vec3b>(y + ky, x + kx);
+          for (int c = 0; c < 3; ++c) {
+            if (p[c] > max_val[c]) max_val[c] = p[c];
+          }
+        }
+      }
+      out.at<Vec3b>(y, x) = Vec3b(max_val[0], max_val[1], max_val[2]);
+    }
+  }
+  return out;
+}
+
+Mat midpoint_filter(const Mat &img, int kernel_size) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  const int offset = kernel_size / 2;
+  for (int y = offset; y < img.rows - offset; ++y) {
+    for (int x = offset; x < img.cols - offset; ++x) {
+      int min_val[3] = {255, 255, 255};
+      int max_val[3] = {0, 0, 0};
+      for (int ky = -offset; ky <= offset; ++ky) {
+        for (int kx = -offset; kx <= offset; ++kx) {
+          Vec3b p = img.at<Vec3b>(y + ky, x + kx);
+          for (int c = 0; c < 3; ++c) {
+            if (p[c] < min_val[c]) min_val[c] = p[c];
+            if (p[c] > max_val[c]) max_val[c] = p[c];
+          }
+        }
+      }
+      out.at<Vec3b>(y, x) = Vec3b((min_val[0] + max_val[0]) / 2, (min_val[1] + max_val[1]) / 2, (min_val[2] + max_val[2]) / 2);
+    }
+  }
+  return out;
+}
 } // namespace spatial
 
 namespace histogram {
@@ -486,4 +689,150 @@ Mat bilinear(const Mat &img, double scale) {
   return out;
 }
 } // namespace interpolation
+
+namespace morphology {
+Mat dilation(const Mat &img, int kernel_size) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  const int offset = kernel_size / 2;
+  for (int y = offset; y < img.rows - offset; ++y) {
+    for (int x = offset; x < img.cols - offset; ++x) {
+      int max_val[3] = {0, 0, 0};
+      for (int ky = -offset; ky <= offset; ++ky) {
+        for (int kx = -offset; kx <= offset; ++kx) {
+          Vec3b p = img.at<Vec3b>(y + ky, x + kx);
+          for(int c=0; c<3; ++c) {
+            if (p[c] > max_val[c]) max_val[c] = p[c];
+          }
+        }
+      }
+      out.at<Vec3b>(y, x) = Vec3b(max_val[0], max_val[1], max_val[2]);
+    }
+  }
+  return out;
+}
+
+Mat erosion(const Mat &img, int kernel_size) {
+  Mat out = Mat::zeros(img.rows, img.cols, CV_8UC3);
+  const int offset = kernel_size / 2;
+  for (int y = offset; y < img.rows - offset; ++y) {
+    for (int x = offset; x < img.cols - offset; ++x) {
+      int min_val[3] = {255, 255, 255};
+      for (int ky = -offset; ky <= offset; ++ky) {
+        for (int kx = -offset; kx <= offset; ++kx) {
+          Vec3b p = img.at<Vec3b>(y + ky, x + kx);
+          for(int c=0; c<3; ++c) {
+            if (p[c] < min_val[c]) min_val[c] = p[c];
+          }
+        }
+      }
+      out.at<Vec3b>(y, x) = Vec3b(min_val[0], min_val[1], min_val[2]);
+    }
+  }
+  return out;
+}
+} // namespace morphology
+
+namespace frequency {
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
+Mat dct_2d(const Mat &img) {
+  int N = 128;
+  Mat out(N, N, CV_64FC1, Scalar(0));
+  Mat gray;
+  if(img.channels() == 3) {
+    gray = color::gray_scale(img);
+  } else {
+    gray = img;
+  }
+  
+  Mat resized(N, N, CV_8UC3, Scalar(0,0,0));
+  for(int y=0; y<N; ++y) {
+    for(int x=0; x<N; ++x) {
+       int sy = clamp((int)(y * img.rows / N), 0, img.rows - 1);
+       int sx = clamp((int)(x * img.cols / N), 0, img.cols - 1);
+       resized.at<Vec3b>(y, x) = gray.at<Vec3b>(sy, sx);
+    }
+  }
+
+  for (int u = 0; u < N; ++u) {
+    for (int v = 0; v < N; ++v) {
+      double sum = 0.0;
+      double cu = (u == 0) ? 1.0 / sqrt(2.0) : 1.0;
+      double cv = (v == 0) ? 1.0 / sqrt(2.0) : 1.0;
+
+      for (int x = 0; x < N; ++x) {
+        for (int y = 0; y < N; ++y) {
+          double pixel = resized.at<Vec3b>(y, x)[0];
+          sum += pixel * cos((2.0 * x + 1.0) * u * M_PI / (2.0 * N)) *
+                         cos((2.0 * y + 1.0) * v * M_PI / (2.0 * N));
+        }
+      }
+      out.at<double>(v, u) = (2.0 / N) * cu * cv * sum;
+    }
+  }
+  return out;
+}
+
+Mat idct_2d(const Mat &dct_img) {
+  int N = 128;
+  Mat out = Mat::zeros(N, N, CV_8UC3);
+  for (int x = 0; x < N; ++x) {
+    for (int y = 0; y < N; ++y) {
+      double sum = 0.0;
+      for (int u = 0; u < N; ++u) {
+        for (int v = 0; v < N; ++v) {
+          double cu = (u == 0) ? 1.0 / sqrt(2.0) : 1.0;
+          double cv = (v == 0) ? 1.0 / sqrt(2.0) : 1.0;
+          double coeff = dct_img.at<double>(v, u);
+          sum += cu * cv * coeff * cos((2.0 * x + 1.0) * u * M_PI / (2.0 * N)) *
+                                   cos((2.0 * y + 1.0) * v * M_PI / (2.0 * N));
+        }
+      }
+      double val = (2.0 / N) * sum;
+      int pixel = clamp(static_cast<int>(round(val)), 0, 255);
+      out.at<Vec3b>(y, x) = Vec3b(pixel, pixel, pixel);
+    }
+  }
+  return out;
+}
+
+Mat low_pass_filter(const Mat &dct_img, int cutoff) {
+  Mat out = dct_img.clone();
+  int N = out.cols;
+  for (int u = 0; u < N; ++u) {
+    for (int v = 0; v < N; ++v) {
+      double dist = sqrt(u * u + v * v);
+      if (dist > cutoff) {
+        out.at<double>(v, u) = 0.0;
+      }
+    }
+  }
+  return out;
+}
+
+Mat high_pass_filter(const Mat &dct_img, int cutoff) {
+  Mat out = dct_img.clone();
+  int N = out.cols;
+  for (int u = 0; u < N; ++u) {
+    for (int v = 0; v < N; ++v) {
+      double dist = sqrt(u * u + v * v);
+      if (dist <= cutoff && (u != 0 || v != 0)) {
+        out.at<double>(v, u) = 0.0;
+      }
+    }
+  }
+  return out;
+}
+
+Mat add_frequency_noise(const Mat &dct_img, int u, int v, double magnitude) {
+  Mat out = dct_img.clone();
+  if (u >= 0 && u < out.cols && v >= 0 && v < out.rows) {
+    out.at<double>(v, u) += magnitude;
+  }
+  return out;
+}
+} // namespace frequency
+
 } // namespace DIP
